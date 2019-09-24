@@ -1,41 +1,44 @@
 {{indexmenu_n>10}}
 
-====== listservice ======
-==== 命令作用 ====
+# listservice
+## 命令作用
 查看当前账号、当前项目下所有UAI Inference在线服务清单
 
-==== 准备工作 ====
-1）安装UAI SDK
+## 准备工作
+### 1. 安装UAI SDK
 
 <code>
 git clone https://github.com/ucloud/uai-sdk
+
 cd uai-sdk
 sudo python setup.py install
 </code>
 
-2）获取用户公钥和私钥 
+### 2. 获取用户公钥和私钥 
 
 [[ai:uai-inference:base:key]]
-  * 登陆UCLOUD官方网站，进入Console页面：[[https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard]]
+
+  * 登陆UCloud官网，进入Console页面：[[https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard]]
   * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
-
-==== 执行listservice命令 ====
-说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py \\
-说明2：若不指定service\_id，返回所有服务清单；指定service\_id时，可精确返回单独在线服务 \\
-说明3：若不指定project\_id时，自动使用账号默认项目。若账号下有多个项目，**强烈建议明确指定project\_id** \\
+## 执行listservice命令
+说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
+说明2：若不指定service\_id，返回所有服务清单；指定service\_id时，可精确返回单独在线服务 
+说明3：若不指定project\_id时，自动使用账号默认项目。若账号下有多个项目，**强烈建议明确指定project\_id** 
 <code>
 python uai_tool.py listservice    --public_key PUBLIC_KEY
-                                  --private_key PRIVATE_KEY
-			          [--project_id PROJECT_ID]
-			          [--region REGION]
-			          [--zone ZONE]
-                                  [--service_id SERVICE_ID]
+
+​                                  --private_key PRIVATE_KEY
+​			          [--project_id PROJECT_ID]
+​			          [--region REGION]
+​			          [--zone ZONE]
+​                                  [--service_id SERVICE_ID]
 </code>
 
-  * 参数说明 \\
+  * 参数说明 
 
-^ **参数**        ^ **说明**  ^ **是否必需**                                    ^
+| **参数** | **说明** | **是否必需** |
+| -------- | -------- | ------------ |
 | public\_key   | 用户的公钥   | 是                                           |
 | private\_key  | 用户的私钥   | 是                                           |
 | project_id    | 项目ID    | 否                                           |
@@ -43,7 +46,7 @@ python uai_tool.py listservice    --public_key PUBLIC_KEY
 | zone          | 可用区     | 否                                           |
 | service\_id   | 服务ID    | 否，如果提供该参数则给出该服务ID的详细信息；否则给出项目组下的所有服务的详细信息。  |
 
-==== listservice命令样例 ====
+## listservice命令样例
 
 <code>
 python uai_tool.py listservice --public_key=PUBLIC_KEY --private_key=PRIVATE_KEY --service_id=SERVICE_ID
@@ -89,7 +92,8 @@ ServiceSet :
 
 RetCode字段为0时表示正常返回，否则为错误码。返回错误码时可以依据Message字段的信息进行错误分析。
 
-==== 图形化界面 ====
+## 图形化界面
 
-在UAI-Inference产品首页，即可显示“默认项目”下所有服务的列表以及其基本信息。切换项目组查看其他项目组下的服务列表。\\
+在UAI-Inference产品首页，即可显示“默认项目”下所有服务的列表以及其基本信息。切换项目组查看其他项目组下的服务列表。
 {{ :ai:uai-inference:use:oplist:listservice:listservice.png |}}
+

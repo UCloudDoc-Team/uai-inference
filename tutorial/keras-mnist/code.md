@@ -1,12 +1,12 @@
 {{indexmenu_n>30}}
 
-===== 在线服务代码简介 =====
+# 在线服务代码简介
 完整的推理服务代码位于[[https://github.com/ucloud/uai-sdk/tree/master/examples/keras/inference/mnist]]，推理服务的代码为mnist\_inference.py，我们同时提供了conf.json和模型checkpoint\_dir
 
-==== mnist_inference.py  ====
+## mnist_inference.py
  minst\_inference.py 实现了load\_model和execute两个函数。
 
-=== 创建 MnistModel 类 ===
+### 创建 MnistModel 类
 minst\_inference.py首先需要实现一个在线服务的类，该类继承了KerasAiUcloudModel（Keras 在线服务基类）
 <code>
 """A very simple MNIST inferencer.
@@ -27,7 +27,7 @@ class MnistModel(KerasAiUcloudModel):
         super(MnistModel, self).__init__(conf)
 </code>
 
-=== 实现load_model ===
+### 实现load_model
 <code>
 def load_model(self):
     model_json_file = open(self.model_arch_file, 'r')
@@ -38,8 +38,9 @@ def load_model(self):
     self.model = model_json
 </code>
 
-=== 实现execute ===
+### 实现execute
 实现execute分为三个部分：
+
   * 加载图像数据；
   * 请求推理操作：self.model.predict()
   * 将请求结果转化成string，并合并成results（results也是一个list，和data list是一一对应的关系）

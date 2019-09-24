@@ -1,14 +1,14 @@
 {{indexmenu_n>7}}
 
-===== 在线服务代码简介 =====
-本代码基于TensorFlow 1.1 的mnist with summaries例子实现在线推理服务[[https://github.com/tensorflow/tensorflow/blob/v1.1.0/tensorflow/examples/tutorials/mnist/mnist_with_summaries.py]]。\\
+# 在线服务代码简介
+本代码基于TensorFlow 1.1 的mnist with summaries例子实现在线推理服务[[https://github.com/tensorflow/tensorflow/blob/v1.1.0/tensorflow/examples/tutorials/mnist/mnist_with_summaries.py]]。
 
 完整的推理服务代码位于[[https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_1.1]]，推理服务的代码为mnist\_inference.py，我们同时提供了conf.json和模型checkpoint\_dir
 
-==== mnist_inference.py  ====
+## mnist_inference.py
  minst\_inference.py 实现了load\_model和execute两个函数。
 
-=== 创建 MnistModel 类 ===
+### 创建 MnistModel 类
 minst\_inference.py首先需要实现一个在线服务的类，该类继承了TFAiUcloudModel（TensorFlow 在线服务基类）
 <code>
 """A very simple MNIST inferencer.
@@ -32,13 +32,14 @@ class MnistModel(TFAiUcloudModel):
     super(MnistModel, self).__init__(conf)
 </code>
 
-=== 实现load\_model ===
+### 实现load\_model
 load\_model实现分为三个部分：
+
   * 创建graph
   * 使用tf.train.Saver() 加载模型，模型目录地址可以从**self.model\_dir**获取，该变量由TFAiUcloudModel实现，并在初始化时从conf.json中获取
   * 将执行推理所需的sess、x、y\_ 三个变量保存到MnistModel.output全局变量中
 <code>
-  def load_model(self):
+    def load_model(self):
     sess = tf.Session()
 
     """ 1
@@ -72,8 +73,9 @@ load\_model实现分为三个部分：
     self.output['y_'] = y_
 </code>
 
-=== 实现execute ===
+### 实现execute
 实现execute实现分为四个部分：
+
   * 从MnistModel.output全局变量中获取sess、x、y\_ 三个变量
   * 从data获取batching的请求数据，并转化为numpy list（我们将所有的请求batch成了一个矩阵imgs)
   * 请求推理操作：predict\_values = sess.run(y\_, feed_dict={x: imgs})
@@ -97,13 +99,13 @@ load\_model实现分为三个部分：
       im = im.astype(np.float32)
       im = np.multiply(im, 1.0 / 255.0)
       imgs.append(im)
-
+    
     """ 3
     """
     imgs = np.array(imgs)
     predict_values = sess.run(y_, feed_dict={x: imgs})
     print(predict_values)
-
+    
     """ 4
     """
     ret = []
@@ -112,3 +114,4 @@ load\_model实现分为三个部分：
       ret.append(ret_val)
     return ret
 </code>
+

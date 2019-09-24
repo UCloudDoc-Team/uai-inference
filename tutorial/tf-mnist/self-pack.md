@@ -1,28 +1,31 @@
 {{indexmenu_n>45}}
 
-===== 使用自定义镜像打包 =====
+# 使用自定义镜像打包
 接下来我们使用自定义的镜像打包
 
-==== 前期准备 ====
+## 前期准备
 我们还需要准备
+
   * 代码
   * 模型文件
   * mnist.conf文件
 
-=== 准备代码 ===
+### 准备代码
 我们在/data/mnist/下创建code目录，并将mnist\_inference.py放入该目录下：
 <code>
 /data/mnist
+
 |_ code
 |_ |_ mnist_inference.py
 </code>
 
-=== 模型文件 ===
-我们可以使用[[ai:uai-train:tutorial:tf-mnist]]中训练出来的mnist模型文件，我们也可以自己训练一个新的，当然我们的github也提供了训练好的模型[[https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_1.1/checkpoint_dir]] \\
+### 模型文件
+我们可以使用[[ai:uai-train:tutorial:tf-mnist]]中训练出来的mnist模型文件，我们也可以自己训练一个新的，当然我们的github也提供了训练好的模型[[https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_1.1/checkpoint_dir]] 
 
 我们把模型文件放入/data/mnist/code/目录下：
 <code>
 /data/mnist
+
 |_ code
 |  |_ mnist_inference.py
 |  |_ checkpoint_dir
@@ -32,29 +35,31 @@
 |  |  |_ mnist.mod.meta
 </code>
 
-=== mnist.conf文件 ===
+### mnist.conf文件
 mnist.conf的结构如下：
 <code>
 {
     "http_server" : {
-        "exec" : {
-            "main_class": "MnistModel",
-            "main_file": "mnist_inference"
-        },
-        "tensorflow" : {
-            "model_dir" : "./checkpoint_dir"
-        }
-    }
+
+​        "exec" : {
+​            "main_class": "MnistModel",
+​            "main_file": "mnist_inference"
+​        },
+​        "tensorflow" : {
+​            "model_dir" : "./checkpoint_dir"
+​        }
+​    }
 }
 </code>
 
-其中**exec.main\_file**定义了入口python模块:mnist\_inference.py（注：这边需要将.py 删除，因为django会以模块的形式import mnist\_inference）\\
-其中**exec.main\_class**定义了推理服务的对象类：MnistModel \\
-其中**tensorflow.model\_dir**定义了模型的相对路径 \\
+其中**exec.main\_file**定义了入口python模块:mnist\_inference.py（注：这边需要将.py 删除，因为django会以模块的形式import mnist\_inference）
+其中**exec.main\_class**定义了推理服务的对象类：MnistModel 
+其中**tensorflow.model\_dir**定义了模型的相对路径 
 
 我们同样将mnist.conf放入/data/mnist/目录下：
 <code>
 /data/mnist
+
 |_ code
 |  |_ minst_inference.py
 |  |_ checkpoint_dir
@@ -65,7 +70,7 @@ mnist.conf的结构如下：
 |  |_ mnist.conf
 </code>
 
-==== 打包CPU在线服务镜像 ====
+## 打包CPU在线服务镜像
 我们直接使用docker build命令来打包mnist镜像，我们需要首先创建一个mnist.Dockerfile
 
 <code>
@@ -86,7 +91,7 @@ Dockerfile里面做了以下几个事情：
   - 指定UAI Inference server在启动时使用/ai-ucloud-client-django/conf.json 配置文件
   - 启动http server
 
-==== 打包GPU在线服务镜像 ====
+## 打包GPU在线服务镜像
 我们直接使用docker build命令来打包GPU版本的mnist镜像，我们需要首先创建一个mnist-gpu.Dockerfile
 
 <code>
@@ -107,17 +112,19 @@ Dockerfile里面做了以下几个事情：
   - 指定UAI Inference server在启动时使用/ai-ucloud-client-django/conf.json 配置文件
   - 启动http server
 
-=== Build CPU在线服务镜像 ===
+### Build CPU在线服务镜像
 <code>
 $ cd /data/mnist/
+
 $ vim mnist.Dockerfile
 $ sudo docker build -t uhub.service.ucloud.cn/uai_demo/tf-mnist-infer-cpu:latest -f mnist.Dockerfile .
 </code>
 我们就可以生成镜像：uhub.service.ucloud.cn/uai_demo/tf-mnist-infer-cpu:latest
 
-=== Build GPU在线服务镜像 ===
+### Build GPU在线服务镜像
 <code>
 $ cd /data/mnist/
+
 $ vim mnist-gpu.Dockerfile
 $ sudo docker build -t uhub.service.ucloud.cn/uai_demo/tf-mnist-infer-gpu:latest -f mnist-gpu.Dockerfile .
 </code>
