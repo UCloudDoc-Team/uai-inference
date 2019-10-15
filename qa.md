@@ -1,4 +1,4 @@
-{{indexmenu_n>7}}
+{{indexmenu_n>70}}
 
 # 常见问题Q&A
 
