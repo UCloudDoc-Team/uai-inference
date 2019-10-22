@@ -1,6 +1,6 @@
 {{indexmenu_n>1}}
 
-# TensorFlow 镜像基础包
+# 镜像基础包
 TensorFlow =1.1/1.2 
 python 2.7.6 
 numpy 

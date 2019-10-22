@@ -1,6 +1,6 @@
 {{indexmenu_n>2}}
 
-# TensorFlow 本地安装部署开发环境
+# 部署本地开发环境
 （案例使用的TensorFlow版本为1.1）
 
 **1. 安装Tensorflow 1.1**

@@ -1,6 +1,6 @@
 {{indexmenu_n>7}}
 
-# MXNet 自定义打包镜像说明
+# 自定义打包镜像
 
 ## 准备工作
 安装UAI SDK
@@ -100,7 +100,7 @@ python uai_tool.py packdocker self \
 | in\_uhost         | 优化参数。当前打包程序是否运行在UCloud云主机中，如果是则为yes，否则为no（默认）。（注：如果运行在云主机中，则可利用内网万兆带宽，加速镜像上传下载）  | 否     |
 
 ### UAI-Inference支持的基础镜像列表
-请参见[[ai:uai-inference:general:dockers]]中MXNet基础镜像列表。
+请参见[[ai:uai-inference:guide:mxnet:packages]]中MXNet基础镜像列表。
 
 ## 输出结果
 <code>

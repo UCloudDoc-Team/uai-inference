@@ -1,6 +1,6 @@
 {{indexmenu_n>10}}
 
-# 使用Console删除服务
+# 用Console删除服务
 
 ## Step1: 查看待删除服务的运行状态
 [[ai:uai-inference:use:oplist:listservice]] 

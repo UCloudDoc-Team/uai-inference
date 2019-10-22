@@ -20,7 +20,7 @@
 </code>
 
 ### 模型文件
-我们可以使用[[ai:uai-train:tutorial:tf-mnist]]中训练出来的mnist模型文件，我们也可以自己训练一个新的，当然我们的github也提供了训练好的模型[[https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_1.1/checkpoint_dir]] 
+我们可以使用[[ai:uai-train:set-up:tf-mnist]]中训练出来的mnist模型文件，我们也可以自己训练一个新的，当然我们的github也提供了训练好的模型[[https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_1.1/checkpoint_dir]] 
 
 我们把模型文件放入/data/mnist/code/目录下：
 <code>

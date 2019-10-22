@@ -1,6 +1,6 @@
 {{indexmenu_n>10}}
 
-# 使用Console灰度部署
+# 用Console灰度部署
 
 ## Step1: 创建AI在线服务
 我们可以根据[[ai:uai-inference:use:new:console]]的说明创建AI在线服务APP

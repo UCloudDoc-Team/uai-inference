@@ -1,6 +1,6 @@
 {{indexmenu_n>2}}
 
-# MXNet 本地安装部署开发环境
+# 部署本地开发环境
 **1. 安装MXNet 0.9.5**
 <code>
 sudo apt-get update

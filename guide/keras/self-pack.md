@@ -1,6 +1,6 @@
 {{indexmenu_n>7}}
 
-# Keras 自定义打包镜像说明
+# 自定义打包镜像
 
 ## 准备工作
 安装UAI SDK

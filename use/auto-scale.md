@@ -3,7 +3,7 @@
 ## 弹性伸缩规则设置
 对于“弹性服务”，其自动进行弹性伸缩，无需设置。 
 对于“独占服务”，需要用户设定伸缩规则，服务将依据伸缩规则动态调整节点数量。 
-具体说明请参见[[ai:uai-inference:general:auto]]
+具体说明请参见[[ai:uai-inference:intro:structure:auto]]
 
 ## 使用Console设定伸缩规则
 ### 设定独占服务伸缩规则

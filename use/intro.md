@@ -1,6 +1,6 @@
 {{indexmenu_n>1}}
 
-# UAI Inference常见操作
+# UAI-Inference常见操作
 
 ## 如何部署并启用第一个AI在线服务？
 **部署并启用一个新的AI在线服务任务:** [[ai:uai-inference:use:new]]

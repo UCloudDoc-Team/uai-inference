@@ -1,6 +1,6 @@
 {{indexmenu_n>10}}
 
-# 使用Console修改在线服务节点数量
+# 用Console修改在线服务节点数量
 
   * 登录UCloud官方网站（ucloud.cn），点击右上角“控制台”选项，进入控制台页面。控制台页面显示账户的基本信息，点击左上角“产品与服务”选项，获取UCloud产品列表。选择“数据分析”列表下的“AI在线服务 UAI”选项，进入UAI产品页面。
 {{ai:uai-service:use:oplist:create:create_1.png?800|}} 

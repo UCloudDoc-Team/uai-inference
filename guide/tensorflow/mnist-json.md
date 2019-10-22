@@ -1,6 +1,6 @@
 {{indexmenu_n>20}}
 
-# TensorFlow MNIST Json 案例
+# TensorFlow MNIST JSON 案例
 
 json格式是一种常见的数据封装格式，我们可以通过代码的修改支持inference结果通过json格式来返回，这种转换的代码非常简单。
 

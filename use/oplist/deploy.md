@@ -28,7 +28,6 @@ sudo python setup.py install
 
 ### 3. 获取用户公钥和私钥 
 
-[[ai:uai-inference:base:key]]
   * 登陆UCloud官网，进入Console页面：[[https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard]]
   * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
@@ -68,7 +67,7 @@ python uai_tool.py deploy  --public_key PUBLIC_KEY
 |os\_deps |用户所需apt-get依赖包名称（不包含版本号，若有多个，请用','隔开，中间不包含空格）|否 |
 |pip |用户所需pip包名称（不包含版本号，若有多个，请用','隔开，中间不包含空格）|否 |
 
-**注：如何获取ufile\_name对应的ufile tar包全下载路径请参见：[[ai:uai-inference:base:ufile:download]]，部署前确认系统未对该url进行自动转义。**
+**注：部署前请确认系统未对ufile_url进行自动转义。**
 
 ## deploy命令样例
 
@@ -142,7 +141,7 @@ Message :
 
 ## 图形化界面
 
-**当前版本的UAI-Inference已经不支持“代码模式“的部署，请使用命令行工具执行该指令。**
+**当前版本的UAI-Inference不支持“代码模式“的部署，请使用命令行工具执行该指令。**
 
 
 

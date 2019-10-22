@@ -1,6 +1,6 @@
 {{indexmenu_n>20}}
 
-# 使用命令行灰度部署
+# 用CLI灰度部署
 ## Step0: 准备工作
 ### 1. 安装UCloud UFile SDK  
 

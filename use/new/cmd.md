@@ -1,6 +1,6 @@
  {{indexmenu_n>20}}
 
-# 使用命令行创建新任务
+# 用CLI创建新任务
 ## Step0: 准备工作
 ### 1. 安装UCloud UFile SDK  
 

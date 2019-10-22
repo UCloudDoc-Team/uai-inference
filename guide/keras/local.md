@@ -1,6 +1,6 @@
 {{indexmenu_n>4}}
 
-# Keras 本地安装部署开发环境
+# 部署本地开发环境
 **1. 安装Kares 1.2.0 **
 <code>
 sudo apt-get update

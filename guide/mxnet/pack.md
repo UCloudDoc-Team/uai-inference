@@ -1,6 +1,6 @@
 {{indexmenu_n>6}}
 
-# MXNet 打包镜像说明
+# 打包镜像
 ## 准备工作
 
 ### 1. 安装UAI SDK
