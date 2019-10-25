@@ -1,4 +1,4 @@
-{{indexmenu_n>3}}
+
 
 # 快速上手:TF-Mnist案例
 
@@ -14,5 +14,5 @@
 
 下面是一个TF-Mnist快速上手的案例。
 
-{{indexmenu>:ai:uai-inference:set-up:tf-mnist#1 | nsort dsort msort}}
+
 

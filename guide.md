@@ -1,4 +1,4 @@
-{{indexmenu_n>5}}
+
 
 # 用户指南
 
@@ -13,5 +13,5 @@
 	* 请同时开放UHub的产品权限位
 
 ## 本地环境开发测试指南
-{{indexmenu>:ai:uai-inference:guide#1 | nsort dsort msort}}
+
 

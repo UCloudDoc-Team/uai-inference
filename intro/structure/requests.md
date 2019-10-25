@@ -1,4 +1,4 @@
-{{indexmenu_n>4}}
+
 
 # 服务请求方式 
 UAI Inference 服务根据算力模式分为两种请求模式：

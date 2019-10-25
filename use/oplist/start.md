@@ -1,4 +1,4 @@
-{{indexmenu_n>7}}
+
 
 # start
 ## 命令作用

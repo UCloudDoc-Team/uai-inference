@@ -1,4 +1,4 @@
-{{indexmenu_n>60}}
+
 
 # 本地测试Mnist在线服务
 我们已经生成了在线服务镜像uhub.service.ucloud.cn/uai_demo/keras-mnist-infer:latest，我们可以在本地启动该服务并测试

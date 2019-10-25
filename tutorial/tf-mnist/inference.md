@@ -1,4 +1,4 @@
-{{indexmenu_n>60}}
+
 
 # 部署CPU在线服务APP
 现在我们可以使用UAI Inference平台来实现Mnist在线服务了：

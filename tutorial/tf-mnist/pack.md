@@ -1,4 +1,4 @@
-{{indexmenu_n>40}}
+
 
 # 制作Mnist在线服务镜像
 接下来我们需要使用UAI-SDK提供的打包工具来打包Mnist的训练镜像。

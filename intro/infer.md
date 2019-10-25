@@ -1,4 +1,4 @@
-{{indexmenu_n>1}}
+
 
 # UAI-Inference基础知识
 AI 在线服务UAI-Inference （UCloud AI online Inference）是面向AI在线Inference服务的大规模分布式计算平台。可提供数万的AI在线服务节点，系统自动完成AI请求的负载均衡，并自动实行节点动态扩容和回收并按实际使用量计费。

@@ -1,4 +1,4 @@
-{{indexmenu_n>12}}
+
 # modifyweight
 ## 命令作用
 在部署版本（[[ai:uai-inference:use:oplist:deploy|]]或[[ai:uai-inference:use:oplist:deploydocker|]]）成功后，调整版本的权重。版本权重将在多个版本激活时，影响访问流量分配的比重。 

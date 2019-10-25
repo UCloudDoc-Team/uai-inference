@@ -1,4 +1,4 @@
-{{indexmenu_n>6}}
+
 
 # 部署GPU在线服务APP
 现在我们可以使用UAI Inference平台来部署GPU版本的Mnist在线服务了：

@@ -1,4 +1,4 @@
-{{indexmenu_n>20}}
+
 
 # 用CLI灰度部署
 ## Step0: 准备工作

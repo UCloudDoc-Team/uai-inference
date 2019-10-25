@@ -1,4 +1,4 @@
-{{indexmenu_n>30}}
+
 
 # Keras MNIST 案例
 本案例所使用的模型和代码基于Keras教程MNIST案例（https://keras.io/getting-started/sequential-model-guide/#examples），您可以在https://github.com/ucloud/uai-sdk/blob/master/examples/keras/mnist/下面下载完整的代码、训练好的模型以及一张用户测试的图片.

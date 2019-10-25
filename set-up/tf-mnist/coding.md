@@ -1,4 +1,4 @@
-{{indexmenu_n>7}}
+
 
 # 在线服务代码简介
 本代码基于TensorFlow 1.1 的mnist with summaries例子实现在线推理服务[[https://github.com/tensorflow/tensorflow/blob/v1.1.0/tensorflow/examples/tutorials/mnist/mnist_with_summaries.py]]。

@@ -1,4 +1,4 @@
-{{indexmenu_n>1}}
+
 
 # 镜像基础包
 TensorFlow =1.1/1.2 

@@ -1,4 +1,4 @@
-{{indexmenu_n>15}}
+
 
 # TensorFlow MNIST 案例
 本案例所使用的模型和代码基于Tensorflow 教程MNIST案例（https://www.tensorflow.org/tutorials/mnist/beginners/），您可以在https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/下面下载完整的代码、训练好的模型以及一张用于测试的图片。 包括两个Case Study： 

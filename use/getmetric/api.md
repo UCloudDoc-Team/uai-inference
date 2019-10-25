@@ -1,4 +1,4 @@
-{{indexmenu_n>0}}
+
 # 获取实时监控信息API
 ## GetUAISrvRealTimeMetric
 
