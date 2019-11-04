@@ -10,12 +10,12 @@
 本Tutorial将以UCloud 普通云主机为范例操作（你也可以使用自己的主机或其他系统）
 
 ## 创建云主机
-我们根据[[ai:uai-inference:base:ubuntu]]操作申请一台2核4G的CPU云主机作为操作平台。
+申请一台CPU云主机（例如2核4G）作为操作平台。
 
 ### 安装docker
 
 1. 设置官方docker软件包源
-   <code>
+```
    sudo apt-get -y install \
      apt-transport-https \
      ca-certificates \
@@ -29,7 +29,7 @@ sudo add-apt-repository \
        stable"
 
 sudo apt-get update
-</code>
+```
 
 2. 安装docker-ce
 

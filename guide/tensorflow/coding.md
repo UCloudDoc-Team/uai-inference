@@ -79,5 +79,5 @@ def execute(self, data, batch_size):
 ​    #TODO: Return Results
 </code>
 
-详细实例用法可参考[[ai:uai-inference:guide:tensorflow:example]]
+详细实例用法可参考[案例](ai/uai-inference/guide/tensorflow/mnist)
 

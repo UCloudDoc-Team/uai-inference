@@ -8,7 +8,7 @@
 2. 创建Inference训练任务，下面的案例中会演示具体过程。
 3. 进行在线服务。
 
-若服务未开通，请参考[[ai:uai-inference:price:pur|购买开通流程]]先开通UAI-Inference。
+若服务未开通，请先开通UAI-Inference。
 
 
 
