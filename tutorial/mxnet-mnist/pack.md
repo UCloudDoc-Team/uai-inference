@@ -20,8 +20,8 @@
 </code>
 
 ### 模型文件
-我们可以使用UAI-Train训练平台训练模型，当然我们的github也提供了训练好的模型 
-[[https://github.com/ucloud/uai-sdk/tree/master/examples/mxnet/inference/mnist/checkpoint_dir]] 
+我们可以使用UAI-Train训练平台训练模型，当然我们的github也提供了训练好的[模型]( 
+https://github.com/ucloud/uai-sdk/tree/master/examples/mxnet/inference/mnist/checkpoint_dir)
 
 我们把模型文件放入/data/mnist/code/checkpoint\_dir目录下：
 <code>
@@ -35,7 +35,7 @@
 </code>
 
 ### mxnet_mnist.conf
-mxnet\_mnist.conf向UAI-Inference平台提供了加载mnist模型的基本信息，我们的github提供了该文件[[https://github.com/ucloud/uai-sdk/blob/master/examples/mxnet/inference/mnist/mxnet_mnist.conf]] 
+mxnet\_mnist.conf向UAI-Inference平台提供了加载mnist模型的基本信息，我们的github提供了该[文件](https://github.com/ucloud/uai-sdk/blob/master/examples/mxnet/inference/mnist/mxnet_mnist.conf)
 mxnet\_mnist.conf的结构如下：
 <code>
 {

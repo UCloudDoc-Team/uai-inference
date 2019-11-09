@@ -8,7 +8,7 @@ json格式是一种常见的数据封装格式，我们可以通过代码的修�
 请先阅读TensorFlow MNIST案例，编写自己的MNIST案例，或者开发别的案例
 
 ## 使用json格式封装输入、输出数据
-您可以使用json格式封装输入、输出数据，这里给出了一个使用输入、输出数据为json格式的execute函数的范例（具体代码可以参见https://github.com/ucloud/uai-sdk/blob/master/examples/tensorflow/inference/mnist_0.11/mnist_inference_json.py）。
+您可以使用json格式封装输入、输出数据，这里给出了一个使用输入、输出数据为json格式的execute函数的范例（具体代码可以[参见](https://github.com/ucloud/uai-sdk/blob/master/examples/tensorflow/inference/mnist_0.11/mnist_inference_json.py)）。
 https://github.com/ucloud/uai-sdk/blob/master/examples/tensorflow/inference/mnist_0.11/2.json 是该案例的input json文件, 这里输入数据是json格式，有两个属性，一个是img，其值是图片的二进制值，一个是appid，其值是图片的ID。
 <code>
 {

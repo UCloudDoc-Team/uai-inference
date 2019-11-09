@@ -16,13 +16,13 @@ sudo python setup.py install
 
 ### 2. 获取用户公钥和私钥 
 
-  * 登陆UCloud官网，进入Console页面：[[https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard]]
+  * 登陆UCloud官网，进入Console页面
   * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
 
 ## 执行listversion命令
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
-说明2：执行该命令时，请确认[[ai:uai-inference:use:oplist:create|]]执行成功，以便填写service\_id 
+说明2：执行该命令时，请确认[](ai/uai-inference/use/oplist/create)执行成功，以便填写service\_id 
 
 <code>
 python uai_tool.py listversion    --public_key PUBLIC_KEY
@@ -116,11 +116,11 @@ RetCode字段为0时表示正常返回，否则为错误码。返回错误码时
 ## 图形化界面
 
 1. 在UAI-Inference产品首页，可获得默认项目下所有服务的列表以及其基本信息。 
-{{ :ai:uai-inference:use:oplist:listversion:listversion0.png |}} 
+![](ai/uai-inference/images/use/oplist/listversion/listversion0.png)
 
 2. 点击想查看版本的服务ID或者“详情”选项，进入服务概览页面。
-{{ :ai:uai-inference:use:oplist:listversion:listversion1.png |}} 
+![](ai/uai-inference/images/use/oplist/listversion/listversion1.png)
 
 3. 进入服务概览页面后，点击“版本管理”选项，进入版本管理页面，获取当前服务ID下的所有服务版本的详细信息。
-{{ :ai:uai-inference:use:oplist:listversion:listversion2.png |}} 
+![](ai/uai-inference/images/use/oplist/listversion/listversion2.png)
 

@@ -2,7 +2,7 @@
 
 # pack
 ## 命令作用
-将用户本地代码打包成一个tar包并上传到UCloud Ufile产品中，该tar包可以在控制台界面使用**“代码模式”**部署版本（操作参见[[ai:uai-inference:use:oplist:deploy|]]） 
+将用户本地代码打包成一个tar包并上传到UCloud Ufile产品中，该tar包可以在控制台界面使用**“代码模式”**部署版本（操作参见[](ai/uai-inference/use/oplist/deploy)） 
 注意：该命令与tar命令区别是它不但会在本地生成tar包，还会上传到UCloud的Ufile中
 
 ## 准备工作
@@ -29,7 +29,7 @@ sudo python setup.py install
 
 ## 3. 获取用户公钥和私钥 
 
-  * 登陆UCloud官网，进入Console[控制台](https://github.com/NVIDIA/nvidia-docker)
+  * 登陆UCloud官网，进入Console控制台
   * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
 ## 准备打包所需文件
@@ -130,3 +130,4 @@ python uai_tool.py pack tf --public_key=PUBLIC_KEY --private_key=PRIVATE_KEY --b
 <code>
 upload local file :PACK_FILE_PATH/UPLOAD_NAME.tar to ufile key=UPLOAD_NAME.tar successful
 </code>
+

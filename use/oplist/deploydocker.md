@@ -2,7 +2,7 @@
 
 # deploydocker
 ## 命令作用
-在[[ai:uai-inference:use:oplist:create|]]在线服务成功后，使用[[ai:uai-inference:use:oplist:packdata_docker|]]打包的Docker镜像部署版本 
+在[](ai/uai-inference/use/oplist/create)在线服务成功后，使用[](ai/uai-inference/use/oplist/packdata_docker)打包的Docker镜像部署版本 
 
 ## 准备工作
 ### 1. 安装UCloud UFile SDK 
@@ -27,14 +27,14 @@ sudo python setup.py install
 
 ### 3. 获取用户公钥和私钥 
 
-  * 登陆UCloud官网，进入Console页面：[[https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard]]
+  * 登陆UCloud官网，进入Console页面
   * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
 ## 执行deploydocker命令
 
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
-说明2：执行该命令时，请确认[[ai:uai-inference:use:oplist:create|]]执行成功，以便填写service\_id 
-说明3：执行该命令时，请确认[[ai:uai-inference:use:oplist:packdata_docker|]]执行成功，以便填写image\_name 
+说明2：执行该命令时，请确认[](ai/uai-inference/use/oplist/create)执行成功，以便填写service\_id 
+说明3：执行该命令时，请确认[](ai/uai-inference/use/oplist/packdata_docker)执行成功，以便填写image\_name 
 
 <code>
 
@@ -116,20 +116,20 @@ Message :
 ## 图形化界面
 
 1. 在服务列表页面，选择需要部署新版本的服务ID，并点击部署按钮，打开部署界面 
-{{ :ai:uai-inference:use:oplist:deploydocker:depoy0.png |}}
+![](ai/uai-inference/images/use/oplist/deploydocker/depoy0.png)
 
-2. 在部署界面的“用户镜像”中选择[[ai:uai-inference:use:oplist:packdata_docker|]]上传到Uhub的镜像完成部署。
-{{ :ai:uai-inference:use:oplist:deploydocker:deploy1.png |}}
+2. 在部署界面的“用户镜像”中选择[](ai/uai-inference/use/oplist/packdata_docker|]]上传到Uhub的镜像完成部署。
+![](ai/uai-inference/images/use/oplist/deploydocker/deploy1.png)
 
 3. 信息填写完成后，点击“确定”选项后，界面自动跳转至服务概览页面，可以观察到当前任务的基本信息。
 注意：**部署耗时几分钟，请耐心等待。** 
-{{ :ai:uai-inference:use:oplist:deploydocker:deploy2.png |}}
+![](ai/uai-inference/images/use/oplist/deploydocker/deploy2.png)
 
 4. 点击“版本管理”选项后，查看部署版本的详细信息。样例如下：
   * 注意1：当版本部署后运行状态是“错误”时，可以点击“部署日志”选项，查看错误信息。
-{{ :ai:uai-inference:use:oplist:deploydocker:deploy3.png |}}
+![](ai/uai-inference/images/use/oplist/deploydocker/deploy3.png)
 
   * 注意2：成功部署的版本初始状态为“未激活”，点击“启动”即可激活该版本的服务。
-{{ :ai:uai-inference:use:oplist:deploydocker:deploy4.png |}}
+![](ai/uai-inference/images/use/oplist/deploydocker/deploy4.png)
 
 

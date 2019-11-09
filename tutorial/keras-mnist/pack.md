@@ -20,8 +20,7 @@
 </code>
 
 ### 模型文件
-我们可以使用UAI-Train训练平台训练模型，当然我们的github也提供了训练好的模型 
-[[https://github.com/ucloud/uai-sdk/tree/master/examples/keras/inference/mnist/checkpoint_dir]] 
+我们可以使用UAI-Train训练平台训练模型，当然我们的github也提供了训练好的[模型](https://github.com/ucloud/uai-sdk/tree/master/examples/keras/inference/mnist/checkpoint_dir)
 
 我们把模型文件放入/data/mnist/code/checkpoint\_dir目录下：
 <code>
@@ -35,7 +34,7 @@
 </code>
 
 ### keras_mnist.conf
-keras\_mnist.conf向UAI-Inference平台提供了加载mnist模型的基本信息，我们的github提供了该文件[[https://github.com/ucloud/uai-sdk/blob/master/examples/keras/inference/mnist/keras_mnist.conf]] 
+keras\_mnist.conf向UAI-Inference平台提供了加载mnist模型的基本信息，我们的github提供了该[文件](https://github.com/ucloud/uai-sdk/blob/master/examples/keras/inference/mnist/keras_mnist.conf) 
 keras\_mnist.conf的结构如下：
 <code>
 {
@@ -58,7 +57,7 @@ keras\_mnist.conf的结构如下：
    * 其中**exec.main\_class**定义了推理服务的对象类：MnistModel 
    * 其中**exec.main\_file**定义了入口python模块:mnist\_inference.py（注：需要将.py 删除，因为django会以模块的形式import mnist\_inference）
    * 其中**mxnet.model\_dir**定义了模型的相对路径，用于给Inference 类对象传递模型路径参数 
-   * **keras.xxx**(可选)：KerasAiUcloudModel会根据keras下model\_dir, model\_name, all\_one\_file, model\_arch\_type的参数拼接keras模型路径，详细请参见[[https://github.com/ucloud/uai-sdk/blob/master/uai/arch/keras_model.py]]。
+   * **keras.xxx**(可选)：KerasAiUcloudModel会根据keras下model\_dir, model\_name, all\_one\_file, model\_arch\_type的参数拼接keras模型路径，详细请[参见](https://github.com/ucloud/uai-sdk/blob/master/uai/arch/keras_model.py)。
 我们同样将keras\_mnist.conf放入/data/mnist/目录下：
 <code>
 /data/mnist/

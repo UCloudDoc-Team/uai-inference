@@ -1,9 +1,9 @@
 
 
 # 在线服务代码简介
-本代码基于TensorFlow 1.1 的mnist with summaries例子实现在线推理服务[[https://github.com/tensorflow/tensorflow/blob/v1.1.0/tensorflow/examples/tutorials/mnist/mnist_with_summaries.py]]。
+本代码基于TensorFlow 1.1 的[mnist with summaries例子](https://github.com/tensorflow/tensorflow/blob/v1.1.0/tensorflow/examples/tutorials/mnist/mnist_with_summaries.py)实现在线推理服务。
 
-完整的推理服务代码位于[[https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_1.1]]，推理服务的代码为mnist\_inference.py，我们同时提供了conf.json和模型checkpoint\_dir
+完整的推理服务代码位于[GitHub](https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_1.1)，推理服务的代码为mnist\_inference.py，我们同时提供了conf.json和模型checkpoint\_dir
 
 ## mnist_inference.py
  minst\_inference.py 实现了load\_model和execute两个函数。

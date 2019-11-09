@@ -5,7 +5,7 @@
 如果使用docker镜像打包，可选择镜像模式。否则，使用代码模式。
 
 ## 镜像模式
-用户执行[[ai:uai-inference:use:oplist:packdata_docker|]]将代码放入镜像中后，可根据以下步骤进行本地测试。
+用户执行[](ai/uai-inference/use/oplist/packdata_docker)将代码放入镜像中后，可根据以下步骤进行本地测试。
 ### 1. 运行本地服务
 镜像准备完成后，可在本地运行docker中的服务。
 <code>
@@ -21,8 +21,8 @@ curl -X POST http://localhost:8080/service -T <file_name>
 AI在线服务包含了一个uai-sdk-httpserver，其是基于Flask的http server逻辑，可以用来测试您所写的inference代码。
 
 ### 1. 代码准备
-首先下载测试所需服务代码。
-[[https://github.com/ucloud/uai-sdk-httpserver]]
+首先下载测试所需服务[代码](https://github.com/ucloud/uai-sdk-httpserver)。
+
 <code>
 git clone https://github.com/ucloud/uai-sdk-httpserver.git
 </code>

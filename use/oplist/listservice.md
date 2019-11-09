@@ -16,7 +16,7 @@ sudo python setup.py install
 
 ### 2. 获取用户公钥和私钥 
 
-  * 登陆UCloud官网，进入Console页面：[[https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard]]
+  * 登陆UCloud官网，进入Console页面
   * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
 ## 执行listservice命令
@@ -93,5 +93,5 @@ RetCode字段为0时表示正常返回，否则为错误码。返回错误码时
 ## 图形化界面
 
 在UAI-Inference产品首页，即可显示“默认项目”下所有服务的列表以及其基本信息。切换项目组查看其他项目组下的服务列表。
-{{ :ai:uai-inference:use:oplist:listservice:listservice.png |}}
+![](ai/uai-inference/images/use/oplist/listservice/listservice.png)
 

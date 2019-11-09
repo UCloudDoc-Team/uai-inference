@@ -83,4 +83,4 @@ UAI Inference 独占型集群的计费将按照**节点\*时**的方式收费，
 # 查看消费情况
 
 在已运行任务的概览页面，可以看到付费信息，具体的账单消费等可在账单计费查看。
-{{:ai:uai-inference:price:infer付费信息.jpg?600|}}
+![](ai/uai-inference/price/infer付费信息.jpg)

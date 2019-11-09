@@ -16,7 +16,7 @@ sudo python setup.py install
 
 ### 2. 获取用户公钥和私钥 
 
-  * 登陆UCloud官网，进入Console页面：[[https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard]]
+  * 登陆UCloud官网，进入Console页面
   * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
 ## 执行create命令
@@ -98,19 +98,19 @@ RetCode字段为0时表示正常返回，否则为错误码。返回错误码时
 ## 图形化界面
 
 1.  登录UCloud官方网站（ucloud.cn），点击右上角“控制台”选项，进入控制台页面。控制台页面显示账户的基本信息，点击左上角“产品与服务”选项，获取Ucloud产品列表。选择“人工智能”列表下的“AI在线服务”选项，进入UAI-Inference产品页面。
-{{ :ai:uai-service:use:oplist:create:create_1.png |}}
+![](ai/uai-inference/images/use/oplist/create/create_1.png)
 
 2.  在UAI-Inference产品首页，显示当前账户默认项目组下所有服务列表，点击“创建新服务”按钮。 
-{{ :ai:uai-inference:use:oplist:create:create1.png |}}
+![](ai/uai-inference/images/use/oplist/create/create1.png)
 
 3.  打开“创建新服务”界面，选择所需的服务类型，填写服务名称、业务组以及运行时的节点配置。图示给出了创建“弹性服务”时的样例。
-{{ :ai:uai-inference:use:oplist:create:create2.png |}}
+![](ai/uai-inference/images/use/oplist/create/create2.png)
 
 4.  点击“确定”选项，页面自动跳转至UAI产品首页，在服务列表中可以观察到新建的服务信息。 
-{{ :ai:uai-inference:use:oplist:create:create3.png |}}
+![](ai/uai-inference/images/use/oplist/create/create3.png)
 
 5.  点击服务ID后，跳转至服务概览页面，显示服务的基本信息，配置信息、监控信息等。 
-{{ :ai:uai-inference:use:oplist:create:create4.png |}}
+![](ai/uai-inference/images/use/oplist/create/create4.png)
 
 6. 创建新的UAI在线服务完成啦！接下来可以开始部署在线服务了。 
 

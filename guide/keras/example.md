@@ -1,12 +1,12 @@
 
 
 # Keras MNIST 案例
-本案例所使用的模型和代码基于Keras教程MNIST案例（https://keras.io/getting-started/sequential-model-guide/#examples），您可以在https://github.com/ucloud/uai-sdk/blob/master/examples/keras/mnist/下面下载完整的代码、训练好的模型以及一张用户测试的图片.
+本案例所使用的模型和代码基于Keras教程[MNIST案例](https://keras.io/getting-started/sequential-model-guide/#examples)，您可以在[这里](https://github.com/ucloud/uai-sdk/blob/master/examples/keras/mnist/)下载完整的代码、训练好的模型以及一张用户测试的图片.
 
 注：本案例基于Keras-1.2.2版本实现，如果使用其他版本的Keras运行该案例，您可能需要对代码进行微调。
 
 ## 准备工作
-请根据 Keras 本地安装部署开发环境[[ai:uai-inference:guide:keras:local]]完成第1至第5步的安装，完成基本环境的部署。
+请根据 Keras 本地安装部署开发环境[](ai/uai-inference/guide/keras/local)完成第1至第5步的安装，完成基本环境的部署。
 
 然后安装图片识别相关的PIL库，安装方法入下：
 <code>
@@ -17,9 +17,9 @@ sudo pip install Pillow
 此时您就可以着手开发您自己的MNIST在线inference服务了。
 
 ## 编写MNIST案例
-本案例使用的MNIST模型的训练代码来自Keras的MNIST案例，您可以在https://github.com/kurapan/CNN-MNIST/blob/master/src/mnist_keras.py 找到源码，并可以用该程序训练新的MNIST模型。
+本案例使用的MNIST模型的训练代码来自Keras的MNIST案例，您可以在[这里](https://github.com/kurapan/CNN-MNIST/blob/master/src/mnist_keras.py)找到源码，并可以用该程序训练新的MNIST模型。
 
-下面我们将逐步介绍如何编写MNIST在线inference服务代码，完整的代码你可以访问https://github.com/ucloud/uai-sdk/blob/master/examples/keras/inference/mnist/mnist_inference.py
+下面我们将逐步介绍如何编写MNIST在线inference服务代码，完整的代码你可以访问[这里](https://github.com/ucloud/uai-sdk/blob/master/examples/keras/inference/mnist/mnist_inference.py)
 
 ### 创建MnistModel类
 
@@ -90,7 +90,7 @@ def execute(self, data, batch_size):
 </code>
 
 ## 测试MNIST案例
-以下步骤依据[[ai:uai-inference:guide:keras:test|]]进行。
+以下步骤依据[](ai/uai-inference/guide/keras/test)进行。
 
 ### 镜像模式
 假设将uai-sdk至于/data目录下，

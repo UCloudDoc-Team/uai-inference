@@ -32,8 +32,7 @@ sudo python setup.py install
 
 3. 获取用户公钥和私钥 
 
-[[ai:uai-inference:base:key]]
-  * 登陆UCloud官网，进入Console页面：[[https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard]]
+  * 登陆UCloud官网，进入Console页面
   * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
 4. UAI SDK工具使用
@@ -42,7 +41,7 @@ sudo python setup.py install
 
 ### Step1: 创建AI独占型在线服务 ###
 
-* 根据[[ai:uai-inference:use:new]]的说明来部署AI**独占型**在线服务APP。
+* 根据[](ai/uai-inference/use/new)的说明来部署AI**独占型**在线服务APP。
 
 ### Step2: 调整在线服务的节点数量
 

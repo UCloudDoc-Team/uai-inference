@@ -24,8 +24,7 @@ sudo python setup.py install
 
 ### 3. 获取用户公钥和私钥 
 
-[[ai:uai-inference:base:key]]
-  * 登陆UCloud官网，进入Console页面：[[https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard]]
+  * 登陆UCloud官网，进入Console页面
   * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
 ### 4.UAI SDK工具使用
@@ -35,10 +34,10 @@ sudo python setup.py install
 
 ## Step1: 创建AI在线服务
 
-* 根据[[ai:uai-inference:use:new]]的说明来部署AI在线服务APP。
+* 根据[](ai/uai-inference/use/new)的说明来部署AI在线服务APP。
 
 ## Step2: 部署多个版本的AI在线服务
-  * 参照[[ai:uai-inference:use:new:cmd]]中Step3操作，按需部署多个版本的AI在线服务。 
+  * 参照[](ai/uai-inference/use/deploy)中Step3操作，按需部署多个版本的AI在线服务。 
 各个版本服务部署成功后，默认灰度权值为10。
 
 ## Step3: 调整各版本的灰度流量

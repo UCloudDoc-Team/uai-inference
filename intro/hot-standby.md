@@ -5,7 +5,7 @@
 ## 什么是Hot-Standby
 Hot-Standby是UAI在线服务在算力独占模式下，为减少独占资源在用户无访问时的资源浪费，用降配资源支持服务待机的一种模式。
 开启Hot-Standby机制后，当AI在线服务在30分钟内无任何请求时，系统会自动将AI在线服务迁移至降配资源池，同时大幅减少费用支出。同时，一旦有用户请求，就会立刻恢复独占节点。
-Hot-Standby涉及的产品定价详见[[ai:uai-inference:price]]
+Hot-Standby涉及的产品定价详见[](ai/uai-inference/price)
 
 ## Hot-Standby适用于什么场景
 1. 服务本身对单节点算力要求高，必须由独占算力（GPU节点）
@@ -15,12 +15,12 @@ Hot-Standby涉及的产品定价详见[[ai:uai-inference:price]]
 ### 1. 服务类型为算力独占模式
 由于算力共享模式的服务，本身已经精确按量计费，在用户无请求时是不收取任何费用的，因此无需Hot-Standby模式。
 
-![hot-standby01](../images/intro/hot-standby01.png)
+![hot-standby01](ai/uai-inference/images/intro/hot-standby01.png)
 
 ### 2. 服务启动自动伸缩容规则
 
 Hot-Standby是自动伸缩规则的一个新特性，它调整算力到降配节点、恢复算力到独占节点的功能都需要自动伸缩引擎来统一执行。
-![hot-standby02](../images/intro/hot-standby02.png)
+![hot-standby02](ai/uai-inference/images/intro/hot-standby02.png)
 
 ### 3. Hot-Standby扩缩容的触发条件
 
@@ -33,7 +33,7 @@ Hot-Standby主要监控QPS，当QPS降到0，并且维持30分钟后，自动将
 * Hot-Standby的触发条件是独立的（QPS=0），与扩容阈值、缩容阈值无关
 
 * 最小节点数量，就是Hot-Standby降配的节点数量
-![hot-standby03](../images/intro/hot-standby03.png)
+![hot-standby03](ai/uai-inference/images/intro/hot-standby03.png)
 
 ### 4. 最大节点、最小节点、扩容阈值、缩容阈值推荐配置值
 

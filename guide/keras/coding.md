@@ -2,7 +2,7 @@
 
 # API调用方法
 ## 获取方法
-[[https://github.com/ucloud/uai-sdk]]
+[地址](https://github.com/ucloud/uai-sdk)
 <code>
 git clone https://github.com/ucloud/uai-sdk.git
 </code>
@@ -63,7 +63,7 @@ def load_model(self):
 </code>
 
 ### execute(self, data, batch_size) 
-用于实现在线inference的执行逻辑。调用execute函数前，系统会自动对累积的请求进行batching，具体batching的方法可以参见https://github.com/ucloud/uai-sdk-httpserver/blob/master/inference.py 中inference\_run函数的实现.
+用于实现在线inference的执行逻辑。调用execute函数前，系统会自动对累积的请求进行batching，具体batching的方法可以参见[此处](https://github.com/ucloud/uai-sdk-httpserver/blob/master/inference.py)中inference\_run函数的实现.
 
 参数说明：
   * 入参：
@@ -81,5 +81,5 @@ def execute(self, data, batch_size):
     #TODO: Return Results
 </code>
 
-详细实例用法可参考[[ai:uai-inference:guide:keras:example]]
+详细实例用法可参考[](ai/uai-inference/guide/keras/example)
 

@@ -1,7 +1,7 @@
 
 
 # 在线服务代码简介
-完整的推理服务代码位于[[https://github.com/ucloud/uai-sdk/tree/master/examples/caffe/inference/mnist]]，推理服务的代码为mnist\_inference.py，我们同时提供了conf.json和模型checkpoint\_dir
+完整的推理服务代码位于[GitHub](https://github.com/ucloud/uai-sdk/tree/master/examples/caffe/inference/mnist)，推理服务的代码为mnist\_inference.py，我们同时提供了conf.json和模型checkpoint\_dir
 
 ## mnist_inference.py
  minst\_inference.py 实现了load\_model和execute两个函数。

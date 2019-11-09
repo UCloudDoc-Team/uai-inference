@@ -14,7 +14,7 @@ sudo python setup.py install
 
 ### 2. 获取用户公钥和私钥
 
-  * 登陆UCloud官网，进入Console页面：[[https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard]]
+  * 登陆UCloud官网，进入[Console页面](https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard)：
   * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
 ## 准备打包所需文件

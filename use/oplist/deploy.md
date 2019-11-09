@@ -2,7 +2,7 @@
 
 # deploy
 ## 命令作用
-在[[ai:uai-inference:use:oplist:create|]]在线服务成功后，使用[[ai:uai-inference:use:oplist:packdata|]]上传到UFile的tar代码包部署版本 
+在[](ai/uai-inference/use/oplist/create)在线服务成功后，使用[](ai/uai-inference/use/oplist/packdata)上传到UFile的tar代码包部署版本 
 **建议优先采用docker镜像方式部署**
 
 ## 准备工作
@@ -28,13 +28,13 @@ sudo python setup.py install
 
 ### 3. 获取用户公钥和私钥 
 
-  * 登陆UCloud官网，进入Console页面：[[https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard]]
+  * 登陆UCloud官网，进入Console页面
   * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
 ## 执行deploy命令
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
-说明2：执行该命令时，请确认[[ai:uai-inference:use:oplist:create|]]执行成功，以便填写service\_id 
-说明3：执行该命令时，请确认[[ai:uai-inference:use:oplist:packdata|]]执行成功，以便填写ufile\_url 
+说明2：执行该命令时，请确认[](ai/uai-inference/use/oplist/create)执行成功，以便填写service\_id 
+说明3：执行该命令时，请确认[](ai/uai-inference/use/oplist/packdata)执行成功，以便填写ufile\_url 
 
 <code>
 python uai_tool.py deploy  --public_key PUBLIC_KEY

@@ -3,7 +3,7 @@
 # packdocker
 
 ## 命令作用
-将用户本地代码打包到Docker镜像中，该Docker镜像可以在控制台界面使用**“镜像模式”**部署版本（操作参见[[ai:uai-inference:use:oplist:deploydocker|]]） 
+将用户本地代码打包到Docker镜像中，该Docker镜像可以在控制台界面使用**“镜像模式”**部署版本（操作参见[](ai/uai-inference/use/oplist/deploydocker)） 
 
 除了支持指定caffe, keras, mxnet, tensorflow等多种深度学习框架进行镜像打包外，同时支持**自定义镜像打包模式**。
 
@@ -30,7 +30,7 @@ sudo python setup.py install
 
 ### 3. 获取用户公钥和私钥 
 
-  * 登陆UCloud官网，进入Console页面：[[https://console.ucloud.cn/dashboard|https://console.ucloud.cn/dashboard]]
+  * 登陆UCloud官网，进入Console页面
   * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
 ## 准备打包所需文件
