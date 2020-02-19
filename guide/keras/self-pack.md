@@ -53,7 +53,7 @@ sudo python setup.py install
   * **exec.main\_class** 用于提示django server应该创建那个Inference 类对象
   * **exec.main\_file** 用于提示django server应该加载哪个inference python主模块
   * **keras.model\_dir**(可选) 对应了MnistModel中self.model\_dir的值，用于给Inference 类对象传递模型路径参数。
-  * **keras.xxx**(可选) KerasAiUcloudModel会根据keras下model\_dir, model\_name, all\_one\_file, model\_arch\_type的参数拼接keras模型路径，详细请[参见]([https://github.com/ucloud/uai-sdk/blob/master/uai/arch/keras_model.py)。
+  * **keras.xxx**(可选) KerasAiUcloudModel会根据keras下model\_dir, model\_name, all\_one\_file, model\_arch\_type的参数拼接keras模型路径，详细请[参见](https://github.com/ucloud/uai-sdk/blob/master/uai/arch/keras_model.py)。
 
 ## 准备命令行工具
 为后续操作方便，可将UAI SDK安装包中的命令行工具（$uai-sdk安装路径/uai\_tools/uai\_tool.py）拷贝到代码pack\_file\_path的同级目录
