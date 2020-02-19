@@ -120,7 +120,7 @@
     * [删除服务](ai/uai-inference/use/delete)
         * [用Console删除服务](ai/uai-inference/use/delete/console)
         * [用CLI删除服务](ai/uai-inference/use/delete/cmd)
-    * [基本操作清单](ai/uai-inference/use/optlist)
+    * [基本操作清单](ai/uai-inference/use/oplist)
         * [tar](ai/uai-inference/use/oplist/tar)
         * [pack](ai/uai-inference/use/oplist/packdata)
         * [packdocker](ai/uai-inference/use/oplist/packdata_docker)
@@ -134,8 +134,8 @@
         * [listversion](ai/uai-inference/use/oplist/listversion)
         * [modifyweight](ai/uai-inference/use/oplist/modifyweight)
         * [modifyname](ai/uai-inference/use/oplist/modifyname)
-        * [modifymemo](ai/uai-inference/use/oplist/modifymemo/index)
-        * [modifynodecount](ai/uai-inference/use/oplist/modifynode)
+        * [modifymemo](ai/uai-inference/use/oplist/modifymemo)
+        * [modifynodecount](ai/uai-inference/use/oplist/modifynodecount)
 * [FAQ](ai/uai-inference/qa)
 
 
