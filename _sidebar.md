@@ -135,7 +135,7 @@
         * [listversion](ai/uai-inference/use/oplist/listversion)
         * [modifyweight](ai/uai-inference/use/oplist/modifyweight)
         * [modifyname](ai/uai-inference/use/oplist/modifyname)
-        * [modifymemo](ai/uai-inference/use/oplist/modifymemo/index)
+        * [modifymemo](ai/uai-inference/use/oplist/modifymemo)
         * [modifynodecount](ai/uai-inference/use/oplist/modifynodecount)
 * [FAQ](ai/uai-inference/qa)
 
