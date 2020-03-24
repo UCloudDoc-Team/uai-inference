@@ -5,7 +5,7 @@
 ## 什么是Hot-Standby
 Hot-Standby是UAI在线服务在算力独占模式下，为减少独占资源在用户无访问时的资源浪费，用降配资源支持服务待机的一种模式。
 开启Hot-Standby机制后，当AI在线服务在30分钟内无任何请求时，系统会自动将AI在线服务迁移至降配资源池，同时大幅减少费用支出。同时，一旦有用户请求，就会立刻恢复独占节点。
-Hot-Standby涉及的产品定价详见[](ai/uai-inference/price)
+Hot-Standby涉及的产品定价详见[](uai-inference/price)
 
 ## Hot-Standby适用于什么场景
 1. 服务本身对单节点算力要求高，必须由独占算力（GPU节点）

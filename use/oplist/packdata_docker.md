@@ -3,7 +3,7 @@
 # packdocker
 
 ## 命令作用
-将用户本地代码打包到Docker镜像中，该Docker镜像可以在控制台界面使用**“镜像模式”**部署版本（操作参见[](ai/uai-inference/use/oplist/deploydocker)） 
+将用户本地代码打包到Docker镜像中，该Docker镜像可以在控制台界面使用**“镜像模式”**部署版本（操作参见[](uai-inference/use/oplist/deploydocker)） 
 
 除了支持指定caffe, keras, mxnet, tensorflow等多种深度学习框架进行镜像打包外，同时支持**自定义镜像打包模式**。
 

@@ -41,7 +41,7 @@ sudo python setup.py install
 
 ### Step1: 创建AI独占型在线服务 ###
 
-* 根据[](ai/uai-inference/use/new)的说明来部署AI**独占型**在线服务APP。
+* 根据[](uai-inference/use/new)的说明来部署AI**独占型**在线服务APP。
 
 ### Step2: 调整在线服务的节点数量
 

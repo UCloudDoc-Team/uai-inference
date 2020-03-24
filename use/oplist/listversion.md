@@ -22,7 +22,7 @@ sudo python setup.py install
 
 ## 执行listversion命令
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
-说明2：执行该命令时，请确认[](ai/uai-inference/use/oplist/create)执行成功，以便填写service\_id 
+说明2：执行该命令时，请确认[](uai-inference/use/oplist/create)执行成功，以便填写service\_id 
 
 <code>
 python uai_tool.py listversion    --public_key PUBLIC_KEY

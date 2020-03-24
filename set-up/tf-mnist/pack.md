@@ -26,7 +26,7 @@ $ cp cp ~/uai-sdk/examples/tensorflow/inference/mnist_1.1/mnist_inference.py ./
 </code>
 
 ### 模型文件
-我们可以使用[UAI-Train](ai/uai-train/set-up/tf-mnist)中训练出来的mnist模型文件，我们也可以自己训练一个新的，当然我们的github也提供了训练好的[模型](https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_1.1/checkpoint_dir)
+我们可以使用[UAI-Train](uai-train/set-up/tf-mnist)中训练出来的mnist模型文件，我们也可以自己训练一个新的，当然我们的github也提供了训练好的[模型](https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_1.1/checkpoint_dir)
 
 我们把模型文件放入/data/mnist/目录下：
 <code>
@@ -65,7 +65,7 @@ $ cp ~/uai-sdk/uai_tools/uai_tool.py ./
 </code>
 
 ## 打包Mnist镜像
-我们使用uai\_tool.py 打包mnist镜像，具体的参数说明在[](ai/uai-inference/guide/tensorflow/pack)。
+我们使用uai\_tool.py 打包mnist镜像，具体的参数说明在[](uai-inference/guide/tensorflow/pack)。
 
 我们用如下命令来打包：
 <code>
@@ -107,7 +107,7 @@ uhub的用户名密码为UCloud console图形界面登录时所用的邮箱和�
 自定义的docker镜像名字，在本案例中我们使用tf-mnist-infer
 
 ### ai_arch_v
-在线服务镜像版本，这里我们选择tensorflow-1.1.0，这样就可以以tensorflow-1.1.0为基础镜像打包mnist的训练镜像。其他TensorFlow 基础镜像选择方法请参见[](ai/uai-train/guide/tensorflow/packing)
+在线服务镜像版本，这里我们选择tensorflow-1.1.0，这样就可以以tensorflow-1.1.0为基础镜像打包mnist的训练镜像。其他TensorFlow 基础镜像选择方法请参见[](uai-train/guide/tensorflow/packing)
 
 ### internal_uhub
 如果是使用ucloud云主机操作打包工具，则选择false，如果是使用公网执行打包操作，则选择true

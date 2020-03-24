@@ -2,7 +2,7 @@
 
 # pack
 ## 命令作用
-将用户本地代码打包成一个tar包并上传到UCloud Ufile产品中，该tar包可以在控制台界面使用**“代码模式”**部署版本（操作参见[](ai/uai-inference/use/oplist/deploy)） 
+将用户本地代码打包成一个tar包并上传到UCloud Ufile产品中，该tar包可以在控制台界面使用**“代码模式”**部署版本（操作参见[](uai-inference/use/oplist/deploy)） 
 注意：该命令与tar命令区别是它不但会在本地生成tar包，还会上传到UCloud的Ufile中
 
 ## 准备工作

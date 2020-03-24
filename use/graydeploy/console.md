@@ -3,7 +3,7 @@
 # 用Console灰度部署
 
 ## Step1: 创建AI在线服务
-我们可以根据[](ai/uai-inference/use​/new/​console)的说明创建AI在线服务APP
+我们可以根据[](uai-inference/use​/new/​console)的说明创建AI在线服务APP
 
 ## Step2: 部署多个版本的AI在线服务
 
@@ -11,7 +11,7 @@
 ![](ai/uai-inference/images/use/graydeploy:service_list_long.png)
 
 ## Step3: 调整各版本的灰度流量
-[](ai/uai-inference/use/oplist/modifyweight) 
+[](/uai-inference/use/oplist/modifyweight) 
 
   * 进入“版本管理”页面，选择需要进行灰度流量调整的版本，点击隐藏在操作中的“灰度流量调整”选项，按照实际所需调整灰度流量。（版本状态为“未激活”或者“已激活”时才有该选项）。
 ![](ai/uai-inference/images/use/graydeploy:modify_weight.png)

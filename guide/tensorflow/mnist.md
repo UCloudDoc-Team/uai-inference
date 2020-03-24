@@ -8,7 +8,7 @@
 注：本案例基于TensorFlow-1.1版本实现，如果使用其他版本的Tensorflow运行该案例，您可能需要对代码进行微调。
 
 ## 准备工作
-请根据[Tensorflow 本地安装部署开发环境](ai/uai-inference/guide/tensorflow/local)完成第1至第5步的安装，完成基本环境的部署
+请根据[Tensorflow 本地安装部署开发环境](uai-inference/guide/tensorflow/local)完成第1至第5步的安装，完成基本环境的部署
 然后安装图片识别相关的PIL库，安装方法入下：
 <code>
 sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk
@@ -118,7 +118,7 @@ def execute(self, data, batch_size):
 </code>
 
 ## 测试MNIST案例
-依据[](ai/uai-inference/guide/tensorflow/test)进行。
+依据[](uai-inference/guide/tensorflow/test)进行。
 ### 镜像模式
 假设将uai-sdk至于/data目录下，
 <code>

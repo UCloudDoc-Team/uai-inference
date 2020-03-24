@@ -5,8 +5,8 @@ UAI-Inference平台使用CPU/GPU 计算节点来提供AI Inference在线服务�
 ![](/ai/uai-inference/images/general/ai_inference综述.png)
 
 其所设计到的主要技术和产品包括包括：
-  - **Docker** [容器技术](ai/uai-inference/basic/docker)
-  - **UHub** [UCloud Docker Hub](ai/uai-inference/basic/uhub)
+  - **Docker** [容器技术](uai-inference/basic/docker)
+  - **UHub** [UCloud Docker Hub](uai-inference/basic/uhub)
 
 ## UAI Inference执行的概念图
 UAI Inference平台在执行在线服务任务分为两块：

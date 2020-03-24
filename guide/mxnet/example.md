@@ -6,7 +6,7 @@
 注：本案例基于MXNet-0.9.5版本实现，如果使用其他版本的MXNet运行该案例，您可能需要对代码进行微调。
 
 ## 准备工作
-请根据 开发指南>MXNet开发指南> MXNet 本地安装部署开发环境[](ai/uai-inference/guide/mxnet/local)完成第1至第5步的安装，完成基本环境的部署。
+请根据 开发指南>MXNet开发指南> MXNet 本地安装部署开发环境[](uai-inference/guide/mxnet/local)完成第1至第5步的安装，完成基本环境的部署。
 
 然后安装图片识别相关的PIL库，安装方法入下：
 <code>
@@ -88,7 +88,7 @@ def execute(self, data, batch_size):
 </code>
 
 ## 测试MNIST案例
-以下步骤依据[](ai/uai-inference/guide/mxnet/test)进行。
+以下步骤依据[](uai-inference/guide/mxnet/test)进行。
 ### 镜像模式
 假设将uai-sdk至于/data目录下，
 <code>

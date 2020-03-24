@@ -24,7 +24,7 @@ UAI Inference 服务根据算力模式分为两种请求模式：
    ab -n 1000 -c 4 -p xxx.png  -H "ServiceID:uaiservice-xxx" -H "Token:xxx" http://uinference.service.ucloud.cn/service
 
 ## 直连请求模式
-该模式用于算力共享模式，由于该模式下只允许客户通过内网访问AI在线服务，因此不通过token令牌鉴权。用户仅需要获取服务地址，详细请查看[](ai/uai-inference/use/new/console)的Step5: 获取服务的URL直接访问即可。
+该模式用于算力共享模式，由于该模式下只允许客户通过内网访问AI在线服务，因此不通过token令牌鉴权。用户仅需要获取服务地址，详细请查看[](uai-inference/use/new/console)的Step5: 获取服务的URL直接访问即可。
 
 ### 请求案例
 

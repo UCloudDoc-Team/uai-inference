@@ -11,10 +11,10 @@
   - 在线服务使用的节点**无外网访问能力**
 
 用户可以根据如下指南开发对于AI框架的在线服务代码+容器：
-[](ai/uai-inference/guide/tensorflow) 
-[](ai/uai-inference/guide/caffe)
-[](ai/uai-inference/guide/keras)
-[](ai/uai-inference/guide/mxnet) 
+[](/uai-inference/guide/tensorflow) 
+[](/uai-inference/guide/caffe)
+[](/uai-inference/guide/keras)
+[](/uai-inference/guide/mxnet) 
 
 也可以根据以上准则开发自定义的 **在线服务容器**
 
@@ -44,5 +44,5 @@ ufile.json 包括两个部分，以https://github.com/ucloud/uai\-sdk/blob/maste
 **注：AI Inference的Http server的模块加载路径为/ai-ucloud-client-django/，因此所有inference相关的python模块都需要放入该目录下。**
 
 ## AI框架相关
-http\_server:tensorflow则指定了tensorflow相关的信息，该信息对于不同AI框架不同，详细可以查看对应AI框架的[开发指南](ai/uai-inference/guide)
+http\_server:tensorflow则指定了tensorflow相关的信息，该信息对于不同AI框架不同，详细可以查看对应AI框架的[开发指南](uai-inference/guide)
 

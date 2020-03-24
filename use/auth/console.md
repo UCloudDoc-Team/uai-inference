@@ -18,7 +18,7 @@
   * 点击服务ID或详细按钮，跳转至服务概览页面，显示服务的基本信息，授权管理信息，配置信息以及操作日志。
 
 ## Step2: 为当前APP授权
-我们可以在**授权管理**控制项下面为当前APP授权，详细请[查看](management_monitor/utoken/operation/mgr_client/auth_client)
+我们可以在**授权管理**控制项下面为当前APP授权，详细请[查看](utoken/operation/mgr_client/auth_client)
 
 ## Step3: 访问APP
 对APP授权成功后，需要在http请求头部添加ServiceID与Token信息进行访问。 对于独占型服务，当前支持通过内网与外网进行访问。

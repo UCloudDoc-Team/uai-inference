@@ -2,7 +2,7 @@
 
 # deploydocker
 ## 命令作用
-在[](ai/uai-inference/use/oplist/create)在线服务成功后，使用[](ai/uai-inference/use/oplist/packdata_docker)打包的Docker镜像部署版本 
+在[](uai-inference/use/oplist/create)在线服务成功后，使用[](uai-inference/use/oplist/packdata_docker)打包的Docker镜像部署版本 
 
 ## 准备工作
 ### 1. 安装UCloud UFile SDK 
@@ -33,8 +33,8 @@ sudo python setup.py install
 ## 执行deploydocker命令
 
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
-说明2：执行该命令时，请确认[](ai/uai-inference/use/oplist/create)执行成功，以便填写service\_id 
-说明3：执行该命令时，请确认[](ai/uai-inference/use/oplist/packdata_docker)执行成功，以便填写image\_name 
+说明2：执行该命令时，请确认[](uai-inference/use/oplist/create)执行成功，以便填写service\_id 
+说明3：执行该命令时，请确认[](uai-inference/use/oplist/packdata_docker)执行成功，以便填写image\_name 
 
 <code>
 
@@ -118,7 +118,7 @@ Message :
 1. 在服务列表页面，选择需要部署新版本的服务ID，并点击部署按钮，打开部署界面 
 ![](ai/uai-inference/images/use/oplist/deploydocker/depoy0.png)
 
-2. 在部署界面的“用户镜像”中选择[](ai/uai-inference/use/oplist/packdata_docker|]]上传到Uhub的镜像完成部署。
+2. 在部署界面的“用户镜像”中选择[](uai-inference/use/oplist/packdata_docker|]]上传到Uhub的镜像完成部署。
 ![](ai/uai-inference/images/use/oplist/deploydocker/deploy1.png)
 
 3. 信息填写完成后，点击“确定”选项后，界面自动跳转至服务概览页面，可以观察到当前任务的基本信息。
