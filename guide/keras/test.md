@@ -3,7 +3,6 @@
 # 本地测试方法
 
 如果使用docker镜像打包，可选择镜像模式。否则，使用代码模式。
-
 ## 镜像模式
 用户执行[](uai-inference/use/oplist/packdata_docker)将代码放入镜像中后，可根据以下步骤进行本地测试。
 
