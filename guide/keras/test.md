@@ -4,7 +4,7 @@
 
 如果使用docker镜像打包，可选择镜像模式。否则，使用代码模式。
 ## 镜像模式
-用户执行[](uai-inference/use/oplist/packdata_docker)将代码放入镜像中后，可根据以下步骤进行本地测试。
+用户执行[packdata_docker](uai-inference/use/oplist/packdata_docker)将代码放入镜像中后，可根据以下步骤进行本地测试。
 
 ### 1. 运行本地服务
 镜像准备完成后，可在本地运行docker中的服务。
@@ -12,7 +12,8 @@
 sudo docker run -d --net=bridge --name=uai_inference_test -p 8080:8080 <image_name>
 </code>
 
-### 2. 发送Http 测试请求
+### 2. 发送http 测试请求
+命令如下
 <code>
 curl -X POST http://localhost:8080/service -T <file_name>
 </code>
@@ -27,10 +28,10 @@ AI在线服务包含了一个uai-sdk-httpserver，其是基于Flask的http serve
 git clone https://github.com/ucloud/uai-sdk-httpserver.git
 </code>
 
-## 2. 模型准备
+### 2. 模型准备
 请将您的模型文件目录checkpoint_dir直接放入http-server-httpserver/ 目录下，因为基于Keras框架训练后的模型文件的文件格式为json及h5，所以通常该模型文件目录包含了上述这些格式的相关模型文件。
 
-## 3. 运行Http Server
+### 3. 运行Http Server
 本地代码测试: 即您可以完全在您自己本地机器上进行AI inference项目的测试。所有文件和模型都位于http-server-httpserver/目录下。
 <code>
 python server.py --port=8080 --json_conf="mnist.conf"
@@ -64,7 +65,8 @@ python server.py --port=8080 --json_conf="mnist.conf"
   * all\_one\_file: 是否所有模型相关信息都在一个文件
   * model\_arc\_type: 描述文件格式（json）
 
-## 4. 发送Http 测试请求
+### 4. 发送http 测试请求
+请求如下：
 <code>
 curl -X POST http://localhost:8080/service -T <file_name>
 </code>
