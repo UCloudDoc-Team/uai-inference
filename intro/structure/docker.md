@@ -5,11 +5,18 @@
 
 ## TensorFlow CPU
 
+```
+**TensorFlow2.0.0a py3**:  uhub.service.ucloud.cn/uaishare/cpu\_uaiservice\_ubuntu-16.04\_python-3.5\_tensorflow-2.0.0a:v1.0
+**TensorFlow2.0.0a py2**:  uhub.service.ucloud.cn/uaishare/cpu\_uaiservice\_ubuntu-16.04\_python-2.7\_tensorflow-2.0.0a:v1.0
+**TensorFlow1.12.0 py3**:  uhub.service.ucloud.cn/uaishare/cpu\_uaiservice\_ubuntu-16.04\_python-3.5\_tensorflow-1.12.0:v1.0 
+**TensorFlow1.12.0 py2**:  uhub.service.ucloud.cn/uaishare/cpu\_uaiservice\_ubuntu-16.04\_python-2.7\_tensorflow-1.12.0:v1.0   
+```
+
 <code>
 
-**TensorFlow2.0.0a py3**:  uhub.service.ucloud.cn/uaishare/cpu\_uaiservice\_ubuntu-16.04\_python-3.5\_tensorflow-2.0.0a:v1.0 
+**TensorFlow2.0.0a py3**:  uhub.service.ucloud.cn/uaishare/cpu\_uaiservice\_ubuntu-16.04\_python-3.5\_tensorflow-2.0.0a:v1.0
 
-**TensorFlow2.0.0a py2**:  uhub.service.ucloud.cn/uaishare/cpu\_uaiservice\_ubuntu-16.04\_python-2.7\_tensorflow-2.0.0a:v1.0 
+**TensorFlow2.0.0a py2**:  uhub.service.ucloud.cn/uaishare/cpu\_uaiservice\_ubuntu-16.04\_python-2.7\_tensorflow-2.0.0a:v1.0
 **TensorFlow1.12.0 py3**:  uhub.service.ucloud.cn/uaishare/cpu\_uaiservice\_ubuntu-16.04\_python-3.5\_tensorflow-1.12.0:v1.0 
 **TensorFlow1.12.0 py2**:  uhub.service.ucloud.cn/uaishare/cpu\_uaiservice\_ubuntu-16.04\_python-2.7\_tensorflow-1.12.0:v1.0 
 **TensorFlow1.9.0 py3**:  uhub.service.ucloud.cn/uaishare/cpu\_uaiservice\_ubuntu-16.04\_python-3.6\_tensorflow-1.9.0:v1.2 
