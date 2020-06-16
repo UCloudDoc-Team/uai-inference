@@ -8,15 +8,15 @@
 
 ### 1. 运行本地服务
 镜像准备完成后，可在本地运行docker中的服务。
-<code>
+```
 sudo docker run -d --net=bridge --name=uai_inference_test -p 8080:8080 <image_name>
-</code>
+```
 
-### 2. 发送http 测试请求
+### 2. 发送http测试请求
 命令如下
-<code>
+```
 curl -X POST http://localhost:8080/service -T <file_name>
-</code>
+```
 
 ## 代码模式
 AI在线服务包含了一个uai-sdk-httpserver，其是基于Flask的http server逻辑，可以用来测试您所写的inference代码。
@@ -33,9 +33,9 @@ git clone https://github.com/ucloud/uai-sdk-httpserver.git
 
 ### 3. 运行Http Server
 本地代码测试: 即您可以完全在您自己本地机器上进行AI inference项目的测试。所有文件和模型都位于http-server-httpserver/目录下。
-<code>
+```
 python server.py --port=8080 --json_conf="mnist.conf"
-</code>
+```
 其中port参数是您本地测试使用的端口号，json_conf参数是您测试配置信息文件名，测试配置信息文件也放在http-server-httpserver/目录下。
 
 **测试配置信息文件定义如下：**
