@@ -37,7 +37,7 @@ sudo python setup.py install
 * 根据[创建服务](uai-inference/use/new)的说明来部署AI在线服务APP。
 
 ## Step2: 部署多个版本的AI在线服务
-  * 参照[部署服务](uai-inference/use/optlist/deploy)中Step3操作，按需部署多个版本的AI在线服务。 
+  * 参照[部署服务](uai-inference/use/oplist/deploy)中Step3操作，按需部署多个版本的AI在线服务。 
 各个版本服务部署成功后，默认灰度权值为10。
 
 ## Step3: 调整各版本的灰度流量
