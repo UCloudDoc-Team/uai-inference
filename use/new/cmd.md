@@ -25,7 +25,7 @@ sudo python setup.py install
 ### 3. 获取用户公钥和私钥 
 
   * 登陆UCloud官网，进入Console页面
-  * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”选项后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
+  * 点击左上角的“产品与服务”选项，选择“监控管理”列表下的“API密钥 UAPI”后，点击API密钥中的“显示”选项，按照提示获取用户的公钥和私钥。
 
 ### 4. UAI SDK工具使用
 
@@ -95,7 +95,7 @@ python uai_tool.py packdocker self \
 
 ### 基于深度学习框架的镜像打包模式
 
-* 执行[](uai-inference/use/oplist/packdata_docker)]命令，通过uai-sdk的工具，将本地文件打包成Docker镜像并上传至Uhub 
+* 执行[打包](uai-inference/use/oplist/packdata_docker)]命令，通过uai-sdk的工具，将本地文件打包成Docker镜像并上传至UHub 
 
 * 支持caffe, keras, mxnet, tf(tensorflow)四种深度学习框架 
 
@@ -226,7 +226,7 @@ Message :
 
 ## Step4: 启动AI在线服务的第一个版本
 
-  * 执行[](uai-inference/use/oplist/start)命令 
+  * 执行[开始](uai-inference/use/oplist/start)命令 
 <code>
 python uai_tool.py start --public_key=PUBLIC_KEY --private_key=PRIVATE_KEY --service_id=SERVICE_ID --paas_id=PAAS_ID --service_version=SERVICE_VERSION
 </code>
