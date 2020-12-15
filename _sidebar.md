@@ -1,4 +1,3 @@
-<div class="sidebar_title icon__uai"> AI在线服务 UAI-Inference</div>
 
 * [概览](/uai-inference/README)
 * [产品简介](/uai-inference/intro)
