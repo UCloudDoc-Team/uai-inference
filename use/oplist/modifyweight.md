@@ -1,7 +1,7 @@
 
 # modifyweight
 ## 命令作用
-在[部署版本](uai-inference/use/oplist/deploy)或[](uai-inference/use/oplist/deploydocker)成功后，调整版本的权重。版本权重将在多个版本激活时，影响访问流量分配的比重。 
+在[部署版本](uai-inference/use/oplist/deploy)或[部署容器](uai-inference/use/oplist/deploydocker)成功后，调整版本的权重。版本权重将在多个版本激活时，影响访问流量分配的比重。 
 
 ## 准备工作
 ### 1. 安装UAI SDK
@@ -23,7 +23,9 @@ sudo python setup.py install
 ## 执行modifyweight命令
 
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
+
 说明2：执行该命令时，请确认[](uai-inference/use/oplist/deploydocker)执行成功，以便填写service\_id, service\_version 
+
 说明3：执行该命令时，请确认版本的状态为“未激活”或者“已激活”。
 
 <code>

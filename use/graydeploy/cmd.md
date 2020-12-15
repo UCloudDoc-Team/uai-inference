@@ -2,7 +2,7 @@
 
 # 用CLI灰度部署
 ## Step0: 准备工作
-### 1. 安装UCloud UFile SDK  
+### 1. 安装UCloud US3 SDK  
 
 <code>
 wget http://sdk.ufile.ucloud.com.cn/python_sdk.tar.gz
@@ -11,7 +11,7 @@ tar zxvf python_sdk.tar.gz
 cd ufile-python
 sudo python setup.py install
 </code>
-**注：UFile SDK仅兼容request 2.1.0以下版本**
+**注：US3 SDK仅兼容request 2.1.0以下版本**
 
 ### 2. 安装UAI SDK
 
@@ -41,7 +41,7 @@ sudo python setup.py install
 各个版本服务部署成功后，默认灰度权值为10。
 
 ## Step3: 调整各版本的灰度流量
-  * 执行[[ai:uai-inference:use:oplist:modifyweight]]命令 
+  * 执行[调整权重](uai-inference/use/oplist/modifyweight)命令 
 按需调整版本的灰度流量，系统会依据“已激活”状态版本的灰度权重自动调整流量占比。
 <code>
 python uai_tool.py modifyweight --public_key=PUBLIC_KEY --private_key=PRIVATE_KEY --service_id=SERVICE_ID --srv_version=SERVICE_VERSION --deploy_weight=DEPLOY_WEIGHT

@@ -21,8 +21,11 @@ sudo python setup.py install
 
 ## 执行listservice命令
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
+
 说明2：若不指定service\_id，返回所有服务清单；指定service\_id时，可精确返回单独在线服务 
+
 说明3：若不指定project\_id时，自动使用账号默认项目。若账号下有多个项目，**强烈建议明确指定project\_id** 
+
 <code>
 python uai_tool.py listservice    --public_key PUBLIC_KEY
 

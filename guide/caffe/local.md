@@ -25,7 +25,7 @@ echo "export PYTHONPATH=`pwd`/python:$PYTHONPATH" >> ~/.bashrc
 source ~/.bashrc
 </code>
 
-**2. 安装UCloud UFile SDK**
+**2. 安装UCloud US3 SDK**
 <code>
 wget http://sdk.ufile.ucloud.com.cn/python_sdk.tar.gz
 
@@ -33,7 +33,7 @@ tar zxvf python_sdk.tar.gz
 cd ufile-python
 sudo python setup.py install
 </code>
-注: UFile SDK仅兼容request 2.1.0以下版本
+注: US3 SDK仅兼容request 2.1.0以下版本
 
 **3. 安装UAI-Inference SDK**
 <code>

@@ -20,17 +20,17 @@ wget https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0-cp27-
 sudo pip install tensorflow-0.11.0-cp27-none-linux_x86_64.whl
 ```
 
-## 2. 安装UCloud UFile SDK
-可选，UFile SDK在使用命令行部署任务时会使用
+## 2. 安装UCloud US3 SDK
+可选，US3 SDK在使用命令行部署任务时会使用
 ```
 wget http://sdk.ufile.ucloud.com.cn/python_sdk.tar.gz
 tar zxvf python_sdk.tar.gz
 cd ufile-python
 sudo python setup.py install
 ```
-注：UFile SDK仅兼容request 2.1.0以下版本
+注：US3 SDK仅兼容request 2.1.0以下版本
 
-## 3. 安装Ucloud AI Inference SDK
+## 3. 安装UCloud AI Inference SDK
 ```
 git clone https://github.com/ucloud/uai-sdk
 cd uai-sdk

@@ -1,7 +1,7 @@
 
 
 # TensorFlow MNIST 案例
-本案例所使用的模型和代码基于Tensorflow 教程MNIST案例（https://www.tensorflow.org/tutorials/mnist/beginners/），您可以在https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/下面下载完整的代码、训练好的模型以及一张用于测试的图片。 包括两个Case Study： 
+本案例所使用的模型和代码基于Tensorflow 教程MNIST案例[链接](https://www.tensorflow.org/tutorials/mnist/beginners/)，您可以在https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/ 下面下载完整的代码、训练好的模型以及一张用于测试的图片。 包括两个Case Study： 
 
   * TensorFlow-1.1： https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_1.1 
   * TensorFlow-0.11: https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_0.11 
@@ -159,7 +159,7 @@ curl -X POST http://localhost:8080/service -T 2.jpg
 
 ### 代码模式
 #### 拷贝代码和模型
-在https://github.com/ucloud/uai-sdk-httpserver上下载uai-sdk-httpserver项目，进入该项目，我们开始正式部署MNIST案例：
+在https://github.com/ucloud/uai-sdk-httpserver 上下载uai-sdk-httpserver项目，进入该项目，我们开始正式部署MNIST案例：
 <code>
 cd uai-sdk-httpserver
 
@@ -201,7 +201,7 @@ python server.py --port=8080 --json_conf="tf_mnist.conf"
 ### Ready to Service
 
 ### 测试本地服务
-在https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_1.1下面有一张2.jpg的图片用户测试，将其放到uai-sdk-httpserver/目录下
+在https://github.com/ucloud/uai-sdk/tree/master/examples/tensorflow/inference/mnist_1.1 下面有一张2.jpg的图片用户测试，将其放到uai-sdk-httpserver/目录下
 
 <code>
 > curl -X POST http://localhost:8080/service -T uai-sdk-httpserver/2.jpg

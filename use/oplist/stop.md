@@ -2,7 +2,7 @@
 
 # stop
 ## 命令作用
-在[部署版本(uai-inference/use/oplist/deploy)或[](uai-inference/use/oplist/deploydocker)成功并[](uai-inference/use/oplist/start)后，强制停止服务或某个特定版本 
+在[部署版本](uai-inference/use/oplist/deploy)或[部署容器](uai-inference/use/oplist/deploydocker)成功并[启动](uai-inference/use/oplist/start)后，强制停止服务或某个特定版本 
 
 ## 准备工作
 ## 1. 安装UAI SDK
@@ -21,8 +21,11 @@ sudo python setup.py install
 
 ## 执行stop命令
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
-说明2：执行该命令时，请确认[](uai-inference/use/oplist/deploy)或[](uai-inference/use/oplist/deploydocker)执行成功，以便填写service\_id、paas\_id、service\_version 
+
+说明2：执行该命令时，请确认[部署版本](uai-inference/use/oplist/deploy)或[部署容器](uai-inference/use/oplist/deploydocker)执行成功，以便填写service\_id、paas\_id、service\_version 
+
 说明3：执行该命令时，若停止整个服务，service\_version参数可以不设置，请确认服务状态为“正常运行”。
+
 说明4：执行该命令时，若停止单个版本，service\_version参数必须设置，请确认版本状态为“已激活”。
 
 <code>

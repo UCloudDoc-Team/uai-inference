@@ -2,10 +2,10 @@
 
 # deploydocker
 ## 命令作用
-在[](uai-inference/use/oplist/create)在线服务成功后，使用[](uai-inference/use/oplist/packdata_docker)打包的Docker镜像部署版本 
+在[创建](uai-inference/use/oplist/create)在线服务成功后，使用[打包](uai-inference/use/oplist/packdata_docker)的Docker镜像部署版本 
 
 ## 准备工作
-### 1. 安装UCloud UFile SDK 
+### 1. 安装UCloud US3 SDK 
 
 <code>
 wget http://sdk.ufile.ucloud.com.cn/python_sdk.tar.gz
@@ -14,7 +14,7 @@ tar zxvf python_sdk.tar.gz
 cd ufile-python
 sudo python setup.py install
 </code>
-**注：UFile SDK仅兼容request 2.1.0以下版本**
+**注：US3 SDK仅兼容request 2.1.0以下版本**
 
 ### 2. 安装UAI SDK
 
@@ -33,8 +33,10 @@ sudo python setup.py install
 ## 执行deploydocker命令
 
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
-说明2：执行该命令时，请确认[](uai-inference/use/oplist/create)执行成功，以便填写service\_id 
-说明3：执行该命令时，请确认[](uai-inference/use/oplist/packdata_docker)执行成功，以便填写image\_name 
+
+说明2：执行该命令时，请确认[创建](uai-inference/use/oplist/create)执行成功，以便填写service\_id 
+
+说明3：执行该命令时，请确认[打包](uai-inference/use/oplist/packdata_docker)执行成功，以便填写image\_name 
 
 <code>
 

@@ -2,7 +2,7 @@
 
 # 用CLI创建新任务
 ## Step0: 准备工作
-### 1. 安装UCloud UFile SDK  
+### 1. 安装UCloud US3 SDK  
 
 <code>
 wget http://sdk.ufile.ucloud.com.cn/python_sdk.tar.gz
@@ -11,7 +11,7 @@ tar zxvf python_sdk.tar.gz
 cd ufile-python
 sudo python setup.py install
 </code>
-**注：UFile SDK仅兼容request 2.10.0以下版本**
+**注：US3 SDK仅兼容request 2.10.0以下版本**
 
 ### 2. 安装UAI SDK
 

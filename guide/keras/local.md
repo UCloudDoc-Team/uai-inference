@@ -14,14 +14,14 @@ sudo pip install keras==1.2.0 -i http://pypi.douban.com/simple/ --trusted-host p
 </code>
 目前UCloud的Keras 1.2.0的镜像使用的backend为TensorFlow 0.11
 
-**2. 安装UCloud UFile SDK**
+**2. 安装UCloud US3 SDK**
 <code>
 wget http://sdk.ufile.ucloud.com.cn/python_sdk.tar.gz
 tar zxvf python_sdk.tar.gz
 cd ufile-python
 sudo python setup.py install
 </code>
-注: UFile SDK仅兼容request 2.1.0以下版本
+注: US3 SDK仅兼容request 2.1.0以下版本
 
 **3. 安装UAI-Inference SDK**
 <code>

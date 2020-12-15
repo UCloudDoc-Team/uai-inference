@@ -2,11 +2,11 @@
 
 # pack
 ## 命令作用
-将用户本地代码打包成一个tar包并上传到UCloud Ufile产品中，该tar包可以在控制台界面使用**“代码模式”**部署版本（操作参见[](uai-inference/use/oplist/deploy)） 
-注意：该命令与tar命令区别是它不但会在本地生成tar包，还会上传到UCloud的Ufile中
+将用户本地代码打包成一个tar包并上传到UCloud US3产品中，该tar包可以在控制台界面使用**“代码模式”**部署版本（操作参见[部署](uai-inference/use/oplist/deploy)） 
+注意：该命令与tar命令区别是它不但会在本地生成tar包，还会上传到UCloud的US3中
 
 ## 准备工作
-### 1. 安装UCloud UFile SDK  
+### 1. 安装UCloud US3 SDK  
 
 <code>
 wget http:sdk.ufile.ucloud.com.cn/python_sdk.tar.gz
@@ -16,7 +16,7 @@ tar
 cd ufile-python
 sudo python setup.py install
 </code>
-**注：UFile SDK仅兼容request 2.10.0以下版本**
+**注：US3 SDK仅兼容request 2.10.0以下版本**
 
 ## 2. 安装UAI SDK
 
@@ -91,7 +91,7 @@ python uai_tool.py pack    {caffe,keras,mxnet,tf}
 | public\_key       | 用户的公钥                                  | 是     |
 | private\_key      | 用户的私钥                                  | 是     |
 | project\_id       | 项目ID                                   | 否     |
-| bucket            | 用户对象存储空间域名（Ufile Bucket）               | 是     |
+| bucket            | 用户对象存储空间域名（US3 Bucket）             | 是     |
 | pack\_file\_path  | 待打包文件所在路径（**相对路径**）                  | 是     |
 | upload\_name      | 上传的tar文件名                              | 是     |
 | main\_module        | 包含主类的代码文件（不包含后缀名）                      | 是     |

@@ -3,12 +3,12 @@
 # packdocker
 
 ## 命令作用
-将用户本地代码打包到Docker镜像中，该Docker镜像可以在控制台界面使用**“镜像模式”**部署版本（操作参见[](uai-inference/use/oplist/deploydocker)） 
+将用户本地代码打包到Docker镜像中，该Docker镜像可以在控制台界面使用**“镜像模式”**部署版本（操作参见[部署版本](uai-inference/use/oplist/deploydocker)） 
 
 除了支持指定caffe, keras, mxnet, tensorflow等多种深度学习框架进行镜像打包外，同时支持**自定义镜像打包模式**。
 
 ## 准备工作
-### 1. 安装UCloud UFile SDK  
+### 1. 安装UCloud US3 SDK  
 
 <code>
 wget http://sdk.ufile.ucloud.com.cn/python_sdk.tar.gz
@@ -17,7 +17,7 @@ tar zxvf python_sdk.tar.gz
 cd ufile-python
 sudo python setup.py install
 </code>
-**注：UFile SDK仅兼容request 2.10.0以下版本**
+**注：US3 SDK仅兼容request 2.10.0以下版本**
 
 ### 2. 安装UAI SDK
 

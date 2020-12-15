@@ -12,7 +12,7 @@ git clone https://github.com/dmlc/mxnet.git mxnet --recursive --branch v0.9.5 --
 cd mxnet/setup_utils && bash bash install-mxnet-ubuntu-python.sh
 </code>
 
-**2. 安装UCloud UFile SDK（可选，UFile SDK在使用命令行部署任务时会使用）**
+**2. 安装UCloud US3 SDK（可选，US3 SDK在使用命令行部署任务时会使用）**
 <code>
 wget http://sdk.ufile.ucloud.com.cn/python_sdk.tar.gz
 
@@ -20,9 +20,9 @@ tar zxvf python_sdk.tar.gz
 cd ufile-python
 sudo python setup.py install
 </code>
-注 UFile SDK仅兼容request 2.1.0以下版本
+注 US3 SDK仅兼容request 2.1.0以下版本
 
-**3. 安装Ucloud AI Inference SDK**
+**3. 安装UCloud AI Inference SDK**
 <code>
 git clone https://github.com/ucloud/uai-sdk
 

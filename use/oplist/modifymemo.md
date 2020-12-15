@@ -1,7 +1,7 @@
 # modifymemo
 
 ## 命令作用
-在部署版本[](uai-inference/use/oplist/deploydocker)成功后，修改版本的备注信息。 
+在[部署版本](uai-inference/use/oplist/deploydocker)成功后，修改版本的备注信息。 
 
 ## 准备工作
 ### 1. 安装UAI SDK
@@ -21,7 +21,8 @@ sudo python setup.py install
 ## 执行modifymemo命令
 
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
-说明2：执行该命令时，请确认[](uai-inference/use/oplist/deploydocker)执行成功，以便填写service\_id, service\_version 
+
+说明2：执行该命令时，请确认[部署](uai-inference/use/oplist/deploydocker)执行成功，以便填写service\_id, service\_version 
 
 <code>
 python uai_tool.py modifymemo  --public_key PUBLIC_KEY

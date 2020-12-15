@@ -43,7 +43,7 @@ sudo docker run hello-world
 </code>
 
 ## 安装UAI SDK
-uai-sdk使用时需要依赖UCloud UFile SDK,因此我们先安装UCloud UFile SDK。
+uai-sdk使用时需要依赖UCloud US3 SDK,因此我们先安装SDK。
 
 <code>
 $ wget http://sdk.ufile.ucloud.com.cn/python_sdk.tar.gz

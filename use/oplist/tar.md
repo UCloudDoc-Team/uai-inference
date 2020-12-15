@@ -3,10 +3,10 @@
 # tar
 ## 命令作用
 将用户本地代码打包成一个tar包，该tar包可以在控制台界面使用**“代码模式”**[部署版本](uai-inference/use/oplist/deploy) 
-注意：该命令与pack命令区别是它仅在本地打包，不会将tar包上传到UCloud的UFile中
+注意：该命令与pack命令区别是它仅在本地打包，不会将tar包上传到UCloud的US3中
 
 ## 准备工作
-### 1. 安装UCloud UFile SDK  
+### 1. 安装UCloud US3 SDK  
 
 <code>
 wget http://sdk.ufile.ucloud.com.cn/python_sdk.tar.gz
@@ -15,7 +15,7 @@ tar zxvf python_sdk.tar.gz
 cd ufile-python
 sudo python setup.py install
 </code>
-**注：UFile SDK仅兼容request 2.10.0以下版本**
+**注：US3 SDK仅兼容request 2.10.0以下版本**
 
 ### 2. 安装UAI SDK
 

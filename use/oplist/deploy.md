@@ -2,11 +2,11 @@
 
 # deploy
 ## 命令作用
-在[](uai-inference/use/oplist/create)在线服务成功后，使用[](uai-inference/use/oplist/packdata)上传到UFile的tar代码包部署版本 
+在[创建](uai-inference/use/oplist/create)在线服务成功后，使用[打包](uai-inference/use/oplist/packdata)上传到US3的tar代码包部署版本 
 **建议优先采用docker镜像方式部署**
 
 ## 准备工作
-### 1. 安装UCloud UFile SDK  
+### 1. 安装UCloud US3 SDK  
 
 <code>
 wget http://sdk.ufile.ucloud.com.cn/python_sdk.tar.gz
@@ -15,7 +15,7 @@ tar zxvf python_sdk.tar.gz
 cd ufile-python
 sudo python setup.py install
 </code>
-**注：UFile SDK仅兼容request 2.10.0以下版本**
+**注：US3 SDK仅兼容request 2.10.0以下版本**
 
 ### 2. 安装UAI SDK
 
@@ -33,7 +33,9 @@ sudo python setup.py install
 
 ## 执行deploy命令
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
+
 说明2：执行该命令时，请确认[](uai-inference/use/oplist/create)执行成功，以便填写service\_id 
+
 说明3：执行该命令时，请确认[](uai-inference/use/oplist/packdata)执行成功，以便填写ufile\_url 
 
 <code>
@@ -67,7 +69,7 @@ python uai_tool.py deploy  --public_key PUBLIC_KEY
 |os\_deps |用户所需apt-get依赖包名称（不包含版本号，若有多个，请用','隔开，中间不包含空格）|否 |
 |pip |用户所需pip包名称（不包含版本号，若有多个，请用','隔开，中间不包含空格）|否 |
 
-**注：部署前请确认系统未对ufile_url进行自动转义。**
+**注：部署前请确认系统未对ufile_url进行自动转义**
 
 ## deploy命令样例
 

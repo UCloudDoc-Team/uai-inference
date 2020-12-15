@@ -2,7 +2,7 @@
 
 # modifyname
 ## 命令作用
-在[](uai-inference/use/oplist/create)在线服务成功后，修改在线服务名称 
+在[创建](uai-inference/use/oplist/create)在线服务成功后，修改在线服务名称 
 
 ## 准备工作
 ### 1. 安装UAI SDK
@@ -22,7 +22,8 @@ sudo python setup.py install
 
 ## 执行modifyname命令
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
-说明2：执行该命令时，请确认[](uai-inference/use/oplist/create)执行成功，以便填写service\_id 
+
+说明2：执行该命令时，请确认[创建](uai-inference/use/oplist/create)执行成功，以便填写service\_id 
 
 <code>
 python uai_tool.py modifyname    --public_key PUBLIC_KEY

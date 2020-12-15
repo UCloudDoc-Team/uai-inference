@@ -3,7 +3,7 @@
 # modifynodecount
 
 ## 命令作用
-在[](uai-inference/use/oplist/deploydocker)成功部署之后，修改服务的节点数目。 
+在[部署](uai-inference/use/oplist/deploydocker)成功之后，修改服务的节点数目。 
 
 **注： 改命令仅适用于独占型服务，即部署在GPU节点上的服务。**
 
@@ -24,8 +24,11 @@ sudo python setup.py install
 
 ## 执行modifynode命令
 说明1：uai\_tool.py默认路径为$uai-sdk安装路径/uai\_tools/uai\_tool.py 
-说明2：执行该命令时，请确认[](uai-inference/use/oplist/deploydocker)执行成功，以便填写service\_id, service\_version 
+
+说明2：执行该命令时，请确认[部署](uai-inference/use/oplist/deploydocker)执行成功，以便填写service\_id, service\_version 
+
 说明3：执行该命令时，请确认版本的状态为“未激活”或者“已激活”。
+
 **说明4: 执行该命令时，请确认创建的服务为独占服务。** 
 
 <code>
