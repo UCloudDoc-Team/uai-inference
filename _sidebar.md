@@ -105,7 +105,7 @@
     * [UAI Inference常见操作](/uai-inference/use/intro)
     * 创建新任务
         * [用Console创建新任务](/uai-inference/use/new/console)
-        * [用CLI创建新任务](/uai-inference/use/new/cmd)
+        * [用CLI创建新任务](/uai-inference/use/new/cmds)
     * 调整在线服务节点数量
         * [用Console修改在线服务节点数量](/uai-inference/use/node-cnt/console)
         * [用CLI修改在线服务节点数量](/uai-inference/use/node-cnt/cmd)
