@@ -13,7 +13,7 @@
 
 ## MXNet
 
-  * [mnist](https://github.com/ucloud/uai-sdk/tree/master/examples/mxnet/mnist)
+  * [mnist](https://github.com/ucloud/uai-sdk/tree/master/examples/mxnet/inference/mnist)
 
 ## Caffe
 

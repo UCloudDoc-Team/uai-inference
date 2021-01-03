@@ -8,7 +8,7 @@ Hot-Standby是UAI在线服务在算力独占模式下，为减少独占资源在
 Hot-Standby涉及的产品定价详见[](uai-inference/price)
 
 ## Hot-Standby适用于什么场景
-1. 服务本身对单节点算力要求高，必须由独占算力（GPU节点）
+1. 服务本身对单节点算力要求高，必须有独占算力（GPU节点）
 2. 服务存在明显的闲置期（无用户访问），但又需要随时待命
 
 ## 如何启动Hot-Standby

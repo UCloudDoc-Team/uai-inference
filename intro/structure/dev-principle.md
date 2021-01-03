@@ -14,8 +14,8 @@
 
 ## UAI Inference Docker镜像准备
 用户可以根据如下指南开发对应AI框架的在线服务代码+容器：
-[](/uai-inference/guide/tensorflow) 
-[](/uai-inference/guide/caffe) 
-[](/uai-inference/guide/keras) 
-[](/uai-inference/guide/mxnet)
+[TensorFlow](/uai-inference/guide/tensorflow) 
+[Caffe](/uai-inference/guide/caffe) 
+[Keras](/uai-inference/guide/keras) 
+[Mxnet](/uai-inference/guide/mxnet)
 

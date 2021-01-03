@@ -18,7 +18,6 @@
 * [环境准备](uai-inference/set-up/tf-mnist/prepare)
 * [创建私有的UHub镜像仓库](uai-inference/set-up/tf-mnist/uhub)
 * [制作Mnist在线服务镜像](uai-inference/set-up/tf-mnist/pack)
-* [部署CPU在线服务APP](uai-inference/set-up/tf-mnist/inference)
 * [部署GPU在线服务APP](uai-inference/set-up/tf-mnist/gpu-inference)
 * [在线服务代码简介](uai-inference/set-up/tf-mnist/coding)
 * [使用自定义镜像打包](uai-inference/set-up/tf-mnist/self-pack)
