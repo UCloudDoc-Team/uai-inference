@@ -8,5 +8,5 @@
 * [创建私有的UHub镜像仓库](uai-inference/tutorial/caffe-mnist/uhub)
 * [使用自定义镜像打包](uai-inference/tutorial/caffe-mnist/pack)
 * [本地测试Mnist在线服务](uai-inference/tutorial/caffe-mnist/local-test)
-* [部署CPU在线服务APP](uai-inference/tutorial/caffe-mnist/cpu-inference)
+* [部署GPU在线服务APP](uai-inference/tutorial/caffe-mnist/gpu-inference)
 

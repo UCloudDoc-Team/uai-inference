@@ -8,5 +8,5 @@
 * [创建私有的UHub镜像仓库](uai-inference/tutorial/keras-mnist/uhub)
 * [使用自定义镜像打包](uai-inference/tutorial/keras-mnist/pack)
 * [本地测试Mnist在线服务](uai-inference/tutorial/keras-mnist/test)
-* [部署CPU在线服务APP](uai-inference/tutorial/keras-mnist/cpu-inference)
+* [部署GPU在线服务APP](uai-inference/tutorial/keras-mnist/gpu-inference)
 

@@ -25,7 +25,7 @@ UAI-Inference包括两个模块：
 
 **何时使用AI在线服务？**
 
-UAI-Inference是一款面向AI在线Fnference服务的平台，您可以将您AI业务中在线服务的模块快速部署于UAI-Inference上，通过利用UCloud云计算平台强大的计算能力来应对小到每小时几十个请求，大到每秒数千次请求的负载。UAI-Inference平台会根据负载完成自动缩放，您完全无需担心计算资源不足或浪费的问题。
+UAI-Inference是一款面向AI在线Inference服务的平台，您可以将您AI业务中在线服务的模块快速部署于UAI-Inference上，通过利用UCloud云计算平台强大的计算能力来应对小到每小时几十个请求，大到每秒数千次请求的负载。UAI-Inference平台会根据负载完成自动缩放，您完全无需担心计算资源不足或浪费的问题。
 
 UAI-Inference平台普遍适用于常见的AI在线服务场景，如图像识别、自然语言处理等等。只需要这些AI服务在UAI-Inference的节点上运行满足延时要求，就可以享受UAI-Inference便捷的服务。
 

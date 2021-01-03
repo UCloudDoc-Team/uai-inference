@@ -70,11 +70,11 @@ mxnet\_mnist.conf的结构如下：
 |_ mxnet_mnist.conf
 </code>
 
-## 打包CPU在线服务镜像
-我们直接使用docker build命令来打包mnist镜像，我们需要首先创建一个mnist-cpu.Dockerfile
+## 打包GPU在线服务镜像
+我们直接使用docker build命令来打包mnist镜像，我们需要首先创建一个mnist-gpu.Dockerfile
 
 <code>
-FROM uhub.service.ucloud.cn/uaishare/cpu_uaiservice_ubuntu-14.04_python-2.7.6_mxnet-0.9.5:v1.2
+FROM uhub.service.ucloud.cn/uaishare/gpu_uaiservice_ubuntu-14.04_python-2.7.6_mxnet-0.9.5:v1.2
 
 EXPOSE 8080
 ADD ./code/ /ai-ucloud-client-django/
@@ -84,7 +84,7 @@ CMD cd /ai-ucloud-client-django && gunicorn -c gunicorn.conf.py httpserver.wsgi
 </code>
 
 Dockerfile里面做了以下几个事情：
-  - 基于uai inference 的mxnet的CPU基础镜像来构建
+  - 基于uai inference 的mxnet的GPU基础镜像来构建
   - export 8080端口
   - 将当前目录下code/ 下所有文件放入/ai-ucloud-client-django/
   - 将mxnet\_mnist.conf 放入/ai-ucloud-client-django/conf.json，django server将自动加载json config文件
@@ -99,20 +99,20 @@ Dockerfile里面做了以下几个事情：
 |  |  |_ mnist_model.prototxt
 |  |_ mnist_inference.py
 |_ caffe_mnist.conf
-|_ mnist-cpu.Dockerfile
+|_ mnist-gpu.Dockerfile
 </code>
 
-### Build CPU在线服务镜像
+### Build GPU在线服务镜像
 <code>
 $ cd /data/mnist/
 
-$ sudo docker build -t uhub.service.ucloud.cn/uai_demo/mxnet-mnist-infer:latest -f mnist-cpu.Dockerfile .
+$ sudo docker build -t uhub.service.ucloud.cn/uai_demo/mxnet-mnist-infer-gpu:latest -f mnist-gpu.Dockerfile .
 </code>
-我们就可以生成镜像：uhub.service.ucloud.cn/uai\_demo/mxnet-mnist-infer:latest
+我们就可以生成镜像：uhub.service.ucloud.cn/uai\_demo/mxnet-mnist-infer-gpu:latest
 
 ## 上传在线服务镜像至uhub镜像仓库
-我们将得到的uhub.service.ucloud.cn/uai\_demo/mxnet-mnist-infer:latest镜像上传到uhub镜像仓库中去。
+我们将得到的uhub.service.ucloud.cn/uai\_demo/mxnet-mnist-infer-gpu:latest镜像上传到uhub镜像仓库中去。
 <code>
-$ sudo docker push uhub.service.ucloud.cn/uai_demo/mxnet-mnist-infer:latest
+$ sudo docker push uhub.service.ucloud.cn/uai_demo/mxnet-mnist-infer-gpu:latest
 </code>
 

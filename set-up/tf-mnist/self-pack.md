@@ -70,27 +70,6 @@ mnist.conf的结构如下：
 |  |_ mnist.conf
 </code>
 
-## 打包CPU在线服务镜像
-我们直接使用docker build命令来打包mnist镜像，我们需要首先创建一个mnist.Dockerfile
-
-<code>
-FROM uhub.service.ucloud.cn/uaishare/cpu_uaiservice_ubuntu-14.04_python-2.7.6_tensorflow-1.1.0:v1.2
-
-EXPOSE 8080
-ADD ./code/ /ai-ucloud-client-django/
-ADD ./mnist.conf  /ai-ucloud-client-django/conf.json
-ENV UAI_SERVICE_CONFIG /ai-ucloud-client-django/conf.json
-CMD cd /ai-ucloud-client-django && gunicorn -c gunicorn.conf.py httpserver.wsgi
-</code>
-
-Dockerfile里面做了以下几个事情：
-  - 基于uai inference 的tensorflow 1.1.0 的基础镜像来构建
-  - export 8080端口
-  - 将当前目录下code/ 下所有文件放入/ai-ucloud-client-django/
-  - 将mnist.conf  放入/ai-ucloud-client-django/conf.json
-  - 指定UAI Inference server在启动时使用/ai-ucloud-client-django/conf.json 配置文件
-  - 启动http server
-
 ## 打包GPU在线服务镜像
 我们直接使用docker build命令来打包GPU版本的mnist镜像，我们需要首先创建一个mnist-gpu.Dockerfile
 
@@ -111,15 +90,6 @@ Dockerfile里面做了以下几个事情：
   - 将mnist.conf  放入/ai-ucloud-client-django/conf.json
   - 指定UAI Inference server在启动时使用/ai-ucloud-client-django/conf.json 配置文件
   - 启动http server
-
-### Build CPU在线服务镜像
-<code>
-$ cd /data/mnist/
-
-$ vim mnist.Dockerfile
-$ sudo docker build -t uhub.service.ucloud.cn/uai_demo/tf-mnist-infer-cpu:latest -f mnist.Dockerfile .
-</code>
-我们就可以生成镜像：uhub.service.ucloud.cn/uai_demo/tf-mnist-infer-cpu:latest
 
 ### Build GPU在线服务镜像
 <code>

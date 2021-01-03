@@ -31,6 +31,8 @@
 
 ## 测试Mnist在线服务
 
+在我们github的目录有一张测试图片2.jpg,我们使用该图片进行测试。
+
 借助以下命令可以对该服务进行测试：
 <code>
 curl -X POST http://<URL>/service -T 2.jpg

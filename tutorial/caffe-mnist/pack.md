@@ -68,39 +68,6 @@ caffe\_mnist.conf的结构如下：
 |_ caffe_mnist.conf
 </code>
 
-## 打包CPU在线服务镜像
-我们直接使用docker build命令来打包mnist镜像，我们需要首先创建一个mnist-cpu.Dockerfile
-
-<code>
-FROM uhub.service.ucloud.cn/uaishare/cpu_uaiservice_ubuntu-14.04_python-2.7.6_caffe-1.0.0:v1.2
-
-EXPOSE 8080
-ADD ./code/ /ai-ucloud-client-django/
-ADD ./caffe_mnist.conf  /ai-ucloud-client-django/conf.json
-ENV UAI_SERVICE_CONFIG "/ai-ucloud-client-django/conf.json"
-
-CMD cd /ai-ucloud-client-django && gunicorn -c gunicorn.conf.py httpserver.wsgi
-</code>
-
-Dockerfile里面做了以下几个事情：
-  - 基于uai inference 的caffe 1.0.0 的CPU基础镜像来构建
-  - export 8080端口
-  - 将当前目录下code/ 下所有文件放入/ai-ucloud-client-django/
-  - 将caffe\_mnist.conf  放入/ai-ucloud-client-django/conf.json
-  - 指定UAI Inference server在启动时使用/ai-ucloud-client-django/conf.json 配置文件
-  - 使用gunicorn运行server
-我们将这个Dockerfile文件放置于/data/mnist/目录下：
-<code>
-/data/mnist/
-  - |_ code
-|  |_ checkpoint_dir
-|  |  |_ mnist_model.caffemodel
-|  |  |_ mnist_model.prototxt
-|  |_ mnist_inference.py
-|_ caffe_mnist.conf
-|_ mnist-cpu.Dockerfile
-</code>
-
 ## 打包GPU在线服务镜像
 我们直接使用docker build命令来打包GPU版本的mnist镜像，我们需要首先创建一个mnist-gpu.Dockerfile
 
@@ -135,14 +102,6 @@ Dockerfile里面做了以下几个事情：
 |_ mnist-gpu.Dockerfile
 </code>
 
-### Build CPU在线服务镜像
-<code>
-$ cd /data/mnist/
-
-$ sudo docker build -t uhub.service.ucloud.cn/uai_demo/caffe-mnist-infer-cpu:latest -f mnist-cpu.Dockerfile .
-</code>
-我们就可以生成镜像：uhub.service.ucloud.cn/uai_demo/caffe-mnist-infer-cpu:latest
-
 ### Build GPU在线服务镜像
 <code>
 $ cd /data/mnist/
@@ -152,8 +111,8 @@ $ sudo docker build -t uhub.service.ucloud.cn/uai_demo/caffe-mnist-infer-gpu:lat
 我们就可以生成GPU镜像：uhub.service.ucloud.cn/uai_demo/caffe-mnist-infer-gpu:latest
 
 ## 上传在线服务镜像至uhub镜像仓库
-以CPU镜像为例，我们将得到的uhub.service.ucloud.cn/uai\_demo/caffe-mnist-infer-cpu:latest镜像上传到uhub镜像仓库中去。
+以CPU镜像为例，我们将得到的uhub.service.ucloud.cn/uai\_demo/caffe-mnist-infer-gpu:latest镜像上传到uhub镜像仓库中去。
 <code>
-$ sudo docker push uhub.service.ucloud.cn/uai_demo/caffe-mnist-infer-cpu:latest
+$ sudo docker push uhub.service.ucloud.cn/uai_demo/caffe-mnist-infer-gpu:latest
 </code>
 

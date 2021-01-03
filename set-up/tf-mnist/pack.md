@@ -104,7 +104,7 @@ python uai_tool.py packdocker tf \
 uhub的用户名密码为UCloud console图形界面登录时所用的邮箱和密码。而uhub\_registry就是uhub镜像库的名字，在本案例中为 uai\_demo
 
 ### uhub_imagename
-自定义的docker镜像名字，在本案例中我们使用tf-mnist-infer
+自定义的docker镜像名字，在本案例中我们使用tf-mnist-infer-gpu
 
 ### ai_arch_v
 在线服务镜像版本，这里我们选择tensorflow-1.1.0，这样就可以以tensorflow-1.1.0为基础镜像打包mnist的训练镜像。其他TensorFlow 基础镜像选择方法请参见[打包](uai-train/guide/tensorflow/packing)
@@ -126,10 +126,10 @@ $ sudo python uai_tool.py packdocker tf  \
 ​			--uhub_username <YOUR_UHUB_USER_NAME> \
 ​			--uhub_password <YOUR_UHUB_PASSWORD> \
 ​			--uhub_registry uai_demo \
-​			--uhub_imagename tf-mnist-infer \
+​			--uhub_imagename tf-mnist-infer-gpu \
 ​			--ai_arch_v=tensorflow-1.1.0 \
 ​                        --in_host no \
 </code>
 
-最终我们将获得镜像：uhub.service.ucloud.cn/uai_demo/tf-mnist-infer:latest
+最终我们将获得镜像：uhub.service.ucloud.cn/uai_demo/tf-mnist-infer-gpu:latest
 

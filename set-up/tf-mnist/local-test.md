@@ -1,7 +1,7 @@
 
 
 # 本地测试Mnist在线服务
-我们已经生成了在线服务镜像uhub.service.ucloud.cn/uai_demo/tf-mnist-infer:latest，我们可以在本地启动该服务并测试
+我们已经生成了在线服务镜像uhub.service.ucloud.cn/uai_demo/tf-mnist-infer-gpu:latest，我们可以在本地启动该服务并测试
 
 ## 1.运行本地服务
 ### 执行GPU在线服务
