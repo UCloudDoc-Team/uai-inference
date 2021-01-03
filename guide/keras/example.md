@@ -6,7 +6,7 @@
 注：本案例基于Keras-1.2.2版本实现，如果使用其他版本的Keras运行该案例，您可能需要对代码进行微调。
 
 ## 准备工作
-请根据 Keras 本地安装部署开发环境[](uai-inference/guide/keras/local)完成第1至第5步的安装，完成基本环境的部署。
+请根据 Keras [本地安装部署开发环境](uai-inference/guide/keras/local)完成第1至第5步的安装，完成基本环境的部署。
 
 然后安装图片识别相关的PIL库，安装方法入下：
 <code>
@@ -90,7 +90,7 @@ def execute(self, data, batch_size):
 </code>
 
 ## 测试MNIST案例
-以下步骤依据[](uai-inference/guide/keras/test)进行。
+以下步骤依据[测试](uai-inference/guide/keras/test)进行。
 
 ### 镜像模式
 假设将uai-sdk至于/data目录下，
@@ -133,7 +133,7 @@ curl -X POST http://localhost:8080/service -T 2.jpg
 
 ### 代码模式
 #### 1. 拷贝代码和模型
-在https://github.com/ucloud/uai-sdk-httpserver上下载uai-sdk-httpserver项目，进入该项目，我们开始正式部署MNIST案例：
+在https://github.com/ucloud/uai-sdk-httpserver 上下载uai-sdk-httpserver项目，进入该项目，我们开始正式部署MNIST案例：
 <code>
 cd uai-sdk-httpserver
 

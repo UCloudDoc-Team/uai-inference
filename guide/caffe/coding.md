@@ -2,7 +2,7 @@
 
 # Caffe API代码说明
 ## 获取方法
-[地址](https://github.com/ucloud/uai-sdk)
+获取[地址](https://github.com/ucloud/uai-sdk)
 <code>
 git clone https://github.com/ucloud/uai-sdk.git
 </code>

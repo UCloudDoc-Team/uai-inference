@@ -10,12 +10,7 @@
 
 ## Step1: 创建AI在线服务
 
-[](/uai-inference/use/oplist/create) 
-
-### 创建弹性服务
-
-  * 点击“创建新服务”选项，并选择**弹性服务**， 可以根据需要选择特定的配置。
-![](ai/uai-inference/images/use/new/create-cpu.png)
+执行[创建服务](/uai-inference/use/oplist/create) 命令
 
 ### 创建独占服务
 
@@ -34,7 +29,7 @@
 
 ## Step2: 准备好部署所需Docker镜像
 
-通过uai-sdk的工具，将本地代码打包成Docker镜像并上传至Uhub，具体步骤参见[](uai-inference/use/oplist/packdata_docker)
+通过uai-sdk的工具，将本地代码打包成Docker镜像并上传至UHub，具体步骤参见[打包](uai-inference/use/oplist/packdata_docker)
 
 
 ## Step3: 部署AI在线服务的第一个版本
@@ -56,7 +51,7 @@
 ![](ai/uai-inference/images/use/oplist/deploydocker代码包部署完成.png) 
 
 ## Step4: 启动AI在线服务的第一个版本
-[](/uai-inference/use/oplist/start) 
+[启动服务](/uai-inference/use/oplist/start) 
 
   * 版本部署成功后，该版本的状态默认为“未激活”， 点击“启动”选项激活该版本的服务，此时版本状态变更为“已激活”。
 ![](ai/uai-inference/images/use/graydeploy/start未激活.png)

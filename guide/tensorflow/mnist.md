@@ -118,7 +118,7 @@ def execute(self, data, batch_size):
 </code>
 
 ## 测试MNIST案例
-依据[](uai-inference/guide/tensorflow/test)进行。
+依据[测试方法](uai-inference/guide/tensorflow/test)进行。
 ### 镜像模式
 假设将uai-sdk至于/data目录下，
 <code>

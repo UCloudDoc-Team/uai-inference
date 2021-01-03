@@ -2,7 +2,7 @@
 
 # API调用方法
 ## 获取方法
-[代码](https://github.com/ucloud/uai-sdk)
+获取[代码](https://github.com/ucloud/uai-sdk)
 <code>
 git clone https://github.com/ucloud/uai-sdk.git
 </code>
@@ -74,4 +74,4 @@ def execute(self, data, batch_size):
     #TODO: Return Results
 </code>
 
-详细实例用法可参考[](uai-inference/guide/mxnet/example)
+详细实例用法可参考[示例](uai-inference/guide/mxnet/example)

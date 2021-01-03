@@ -51,7 +51,7 @@ sudo python setup.py install
   * **exec.main\_class** 用于提示django server应该创建那个Inference 类对象
   * **exec.main\_file** 用于提示django server应该加载哪个inference python主模块
   * **caffe.model\_dir**（可选） 对应了MnistModel中self.model\_dir的值，用于给Inference 类对象传递模型路径参数。
-  * **caffe.model\_name**（可选） 对应了MnistModel中self.model\_name，用于给Inference 类对象传递模型名字参数，CaffeAiUcloudModel会根据caffe.model\_dir和caffe.model\_name自动生成caffe模型的.prototxt和.caffemodel文件路径，详情请[参见](https://github.com/ucloud/uai-sdk/blob/master/uai/arch/caffe_model.py)。
+  * **caffe.model\_name**（可选） 对应了MnistModel中self.model\_name，用于给Inference 类对象传递模型名字参数，CaffeAiUcloudModel会根据caffe.model\_dir和caffe.model\_name自动生成caffe模型的.prototxt和.caffemodel文件路径，详情请参见[链接](https://github.com/ucloud/uai-sdk/blob/master/uai/arch/caffe_model.py)。
 
 ## 准备命令行工具
 为后续操作方便，可将UAI SDK安装包中的命令行工具（$uai-sdk安装路径/uai\_tools/uai\_tool.py）拷贝到代码pack\_file\_path的同级目录

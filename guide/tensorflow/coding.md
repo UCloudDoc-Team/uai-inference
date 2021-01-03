@@ -2,7 +2,7 @@
 
 # API调用方法
 ## 获取方法
-[代码](https://github.com/ucloud/uai-sdk)
+获取[代码](https://github.com/ucloud/uai-sdk)
 <code>
 git clone https://github.com/ucloud/uai-sdk.git
 </code>

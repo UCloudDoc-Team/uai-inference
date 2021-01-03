@@ -1,7 +1,7 @@
 
 
 # 设计原理
-UAI-Inference平台使用CPU/GPU 计算节点来提供AI Inference在线服务任务的基础算力。平台利用Docker容器技术来封装训练任务，并内置Django Server来接受外部HTTP请求
+UAI-Inference平台使用GPU 计算节点来提供AI Inference在线服务任务的基础算力。平台利用Docker容器技术来封装训练任务，并内置Django Server来接受外部HTTP请求
 ![](/ai/uai-inference/images/general/ai_inference综述.png)
 
 其所设计到的主要技术和产品包括包括：

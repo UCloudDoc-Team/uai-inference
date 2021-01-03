@@ -1,6 +1,6 @@
 
 
-# 用户指南
+# 开发指南
 
   * 开发环境：
 	  * UA-Inference目前基于Ubuntu系统运行，因此建议也用相同系统测试
@@ -18,7 +18,6 @@
 * [开发综述](uai-inference/guide/general)
     * [设计原理](uai-inference/guide/general/principle)
     * [开发综述](uai-inference/guide/general/dev-principle)
-* [UAI Inference 开发概述](uai-inference/guide/principle)
 * [TensorFlow 开发指南](uai-inference/guide/tensorflow)
     * [镜像基础包](uai-inference/guide/tensorflow/packages)
     * [部署本地开发环境](uai-inference/guide/tensorflow/local)

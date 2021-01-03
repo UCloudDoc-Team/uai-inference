@@ -109,7 +109,7 @@ curl -X POST http://localhost:8080/service -T 2.jpg
 
 ### 代码模式
 #### 拷贝代码和模型
-在https://github.com/ucloud/uai-sdk-httpserver上下载uai-sdk-httpserver项目，进入该项目，我们开始正式部署MNIST案例：
+在https://github.com/ucloud/uai-sdk-httpserver 上下载uai-sdk-httpserver项目，进入该项目，我们开始正式部署MNIST案例：
 <code>
 cd uai-sdk-httpserver
 

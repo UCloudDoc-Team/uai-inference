@@ -5,8 +5,6 @@
 ## 命令作用
 在[部署](uai-inference/use/oplist/deploydocker)成功之后，修改服务的节点数目。 
 
-**注： 改命令仅适用于独占型服务，即部署在GPU节点上的服务。**
-
 ## 准备工作
 ### 1. 安装UAI SDK
 
@@ -28,8 +26,6 @@ sudo python setup.py install
 说明2：执行该命令时，请确认[部署](uai-inference/use/oplist/deploydocker)执行成功，以便填写service\_id, service\_version 
 
 说明3：执行该命令时，请确认版本的状态为“未激活”或者“已激活”。
-
-**说明4: 执行该命令时，请确认创建的服务为独占服务。** 
 
 <code>
 python uai_tool.py modifynodecount  --public_key PUBLIC_KEY

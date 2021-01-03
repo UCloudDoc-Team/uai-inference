@@ -24,13 +24,11 @@ sudo python setup.py install
 <code>
 python uai_tool.py create    --public_key PUBLIC_KEY
 
-​          	             --private_key PRIVATE_KEY
+​          	                   --private_key PRIVATE_KEY
 ​			     [--project_id PROJECT_ID]
 ​			     [--region REGION]
 ​			     [--zone ZONE]
-​                  	     --service_name SERVICE_NAME
-​			     [--cpu CPU]
-​			     [--memory MEMORY]
+​                  	          --service_name SERVICE_NAME
 ​			     [--gpu GPU]
 ​			     [--business_group BUSINESS_GROUP]
 </code>
@@ -45,9 +43,7 @@ python uai_tool.py create    --public_key PUBLIC_KEY
 | region   	 | 地域                	        | 否         |
 | zone           | 可用区				| 否         |
 | service\_name  | 指定创建服务的名称（仅能包含数字、字母以及下划线）  | 是         |
-| cpu            | 弹性计算节点的CPU数量，可取值为1，2，4，8    | 否，创建弹性服务时必填         |
-| memory         | 弹性计算节点的内存（GB），与cpu取值相同      | 否，创建弹性服务时必填         |
-| gpu            | 独占计算节点类型，包括：1\_P40			| 否，创建独占服务时必填    |
+| gpu            | 独占计算节点类型，包括：1\_P40			| 是    |
 | business_group | 用户组					      | 否	              |
 
 目前弹性服务和独占服务的可支持机型列表如下。“对应参数”一列表示选择该机型时，creat命令中应填写的参数
@@ -55,22 +51,8 @@ python uai_tool.py create    --public_key PUBLIC_KEY
 | **服务类型** | **支持机型** | **对应参数** |
 | ------------ | ------------ | ------------ |
 |独占服务    |P40单卡：CPU4核 内存16GB	| \-\-gpu=1_P40    |
-|弹性服务    |1C1G：CPU1核 内存1GB	| \-\-cpu=1  \-\-memory=1    |
-|           |2C2G：CPU2核 内存2GB	| \-\-cpu=2  \-\-memory=2    |
-|           |4C4G：CPU4核 内存4GB	| \-\-cpu=4  \-\-memory=4    |
-|           |8C8G：CPU8核 内存8GB	| \-\-cpu=8  \-\-memory=8    |
-
-
-
-
 
 ## create命令样例
-
-  * 创建弹性服务
-
-<code>
-python uai_tool.py create --public_key=PUBLIC_KEY --private_key=PRIVATE_KEY --service_name=SERVICE_NAME --cpu=CPU --memory=MEMORY
-</code>
 
   * 创建独占服务
 

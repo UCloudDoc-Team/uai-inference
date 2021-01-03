@@ -33,22 +33,9 @@ sudo python setup.py install
 
 ## Step1: 创建AI在线服务
 
-### 创建弹性服务
+### 创建服务
 
-  * 执行[](uai-inference/use/oplist/create)命令 
-
-<code>
-python uai_tool.py create \
-
-​	--public_key=PUBLIC_KEY \
-​	--private_key=PRIVATE_KEY \
-​	--service_name=SERVICE_NAME \
-​	--cpu=CPU --memory=MEMORY
-</code>
-
-### 创建独占服务
-
-  * 执行[[ai:uai-inference:use:oplist:create]]命令 
+  * 执行[创建服务](uai-inference/use/oplist/create)命令 
 
 <code>
 python uai_tool.py create \
@@ -79,7 +66,7 @@ CreateUAIServiceSuccess:
 
 ### 基于自定义的镜像打包模式
 
-* 执行[](uai-inference/use/oplist/packdata_docker)命令，通过uai-sdk的工具，将本地文件打包成Docker镜像并上传至Uhub 
+* 执行[打包](uai-inference/use/oplist/packdata_docker)命令，通过uai-sdk的工具，将本地文件打包成Docker镜像并上传至Uhub 
 
 <code>
 python uai_tool.py packdocker self \
@@ -172,7 +159,7 @@ upload docker images successful. images:uhub.ucloud.cn/fanrongtest/keras-inferen
 
 ## Step3: 部署AI在线服务的第一个版本
 
-  * 执行[](uai-inference/use/oplist/deploydocker)命令 
+  * 执行[部署容器](uai-inference/use/oplist/deploydocker)命令 
 
 <code>
 
