@@ -56,13 +56,13 @@ $ sudo python setup.py install
 
 我们需要从github上面下载uai-sdk：
 
-<code>
+```bash
 $ cd ~
 
 $ git clone https://github.com/ucloud/uai-sdk.git
 $ cd uai-sdk
 $ sudo python setup.py install
-</code>
+```
 
 ## 准备操作环境
 我们在/data/目录下创建一个mnist目录来执行操作：
